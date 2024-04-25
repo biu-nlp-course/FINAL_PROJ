@@ -20,6 +20,8 @@ class Generator:
 
     def generate_sentence_from_graph(self, G):
         names = random.sample(grammar["names"], G.number_of_nodes())
+        mapping = {idx: names[idx] for idx in range(G.number_of_nodes())}
+        print(f'mapping is {mapping}')
         all_edges = list(G.edges())
         # with some probability - do shuffle the all_edges
         random.shuffle(all_edges)
