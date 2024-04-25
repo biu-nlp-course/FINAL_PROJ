@@ -24,8 +24,9 @@ class MultiChoiceGenerator(Generator):
                 # If there's only one connectivity component, select it
                 G = nx.DiGraph(G.subgraph(components[0]))
 
+                not_graph_path = any(G.out_degree(node) > 1 or G.in_degree(node) > 1 for node in G.nodes)
                 # Check if the resulting graph is a Directed Acyclic Graph (DAG)
-                if nx.is_directed_acyclic_graph(G):
+                if nx.is_directed_acyclic_graph(G) and not_graph_path:
                     print(f"Success! Graph is a Directed Acyclic Graph (DAG) with one connectivity component and exactly {len(G.edges)} edges.")
                     return G
 

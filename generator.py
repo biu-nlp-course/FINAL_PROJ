@@ -25,11 +25,5 @@ class Generator:
         all_edges = list(G.edges())
         # with some probability - do shuffle the all_edges
         random.shuffle(all_edges)
-        sentence = ""
-        for edge in all_edges:
-            sentence += self.get_ordered_clause(names[edge[0]], names[edge[1]]) + " "
-        return sentence[:-1]
-
-
-
-
+        sentences = [self.get_ordered_clause(names[edge[0]], names[edge[1]]) for edge in all_edges]
+        return sentences
