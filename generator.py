@@ -7,22 +7,20 @@ import random
 with open('Grammar.json', 'r') as file:
     grammar = json.load(file)
 
+
 class Generator:
     def create_directed_path_graph(self, n):
         # Create a directed path graph with n vertices
         G = nx.path_graph(n, create_using=nx.DiGraph)
         return G
 
-
     def draw_graph(self, G):
         # Draw the graph
         nx.draw(G, with_labels=True, node_size=500, node_color='skyblue', font_size=12, font_weight='bold', arrows=True)
         plt.show()
 
-
     def get_ordered_clause(self, a, b):
         return f"{b} came after {a}."
-
 
     def generate_sentence_from_graph(self, G):
         names = random.sample(grammar["names"], G.number_of_nodes())
