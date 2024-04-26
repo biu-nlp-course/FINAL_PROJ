@@ -1,6 +1,11 @@
 import networkx as nx
 from generator import Generator
+import json
 import random
+
+with open('grammar.json', 'r') as file:
+    grammar = json.load(file)
+
 
 class MultiChoiceGenerator(Generator):
     def create_directed_path_graph(self, n):
@@ -11,9 +16,8 @@ class MultiChoiceGenerator(Generator):
             nodes = list(range(n))
             G.add_nodes_from(nodes)
 
-            # Generate edges randomly until there are exactly 9 edges
-            while G.number_of_edges() < n-1:
-                source = random.choice(nodes)  # Assuming 9 nodes numbered 0 to 8
+            while G.number_of_edges() < n - 1:
+                source = random.choice(nodes)
                 target = random.choice(nodes)
                 if source != target and not nx.has_path(G, target, source):
                     G.add_edge(source, target)
@@ -27,24 +31,18 @@ class MultiChoiceGenerator(Generator):
                 not_graph_path = any(G.out_degree(node) > 1 or G.in_degree(node) > 1 for node in G.nodes)
                 # Check if the resulting graph is a Directed Acyclic Graph (DAG)
                 if nx.is_directed_acyclic_graph(G) and not_graph_path:
-                    print(f"Success! Graph is a Directed Acyclic Graph (DAG) with one connectivity component and exactly {len(G.edges)} edges.")
+                    print(f"Success! Graph is DAG with 1 connectivity component and exactly {len(G.edges)} edges.")
                     return G
 
+    def get_relation(self, G, a, b):
+        if nx.has_path(G, a, b):
+            return "TRUE"
+        elif nx.has_path(G, b, a):
+            return "FALSE"
+        else:
+            return "UNABLE_TO_DETERMINE"
 
-    # todo
-    # def get_ordered_clause(self, a, b):
-    #     """""""
-
-
-class MultiChoiceDisambiguateGenerator(Generator):
-    pass
-    # todo
-    # def get_ordered_clause(self, a, b):
-    #     """""""
-
-#
-
-multi_choice_generator = MultiChoiceGenerator()
-multi_choice_graph = multi_choice_generator.create_directed_path_graph(4)
-multi_choice_generator.draw_graph(multi_choice_graph)
-print(multi_choice_generator.generate_sentence_from_graph(multi_choice_graph))
+# N=4
+# multi_choice_generator = MultiChoiceGenerator(disambiguate=False)
+# multi_choice_graph = multi_choice_generator.create_directed_path_graph(N)
+# print(multi_choice_generator.generate_passage(multi_choice_graph, draw_graph=True))

@@ -1,5 +1,6 @@
 {
   "names": ["Bob", "Dylan", "Moshe", "Rina", "Shuli", "John", "David", "Emily", "Judith"],
-  "before": ["before", "prior"],
-  "after": ["after", "following"]
+  "before": ["before", "prior to", "earlier than", "preceding", "previous to"],
+  "after": ["after", "following", "subsequent to"],
+  "verb": ["came", "arrived", "appeared"]
 }
