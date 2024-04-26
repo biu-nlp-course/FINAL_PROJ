@@ -27,7 +27,8 @@ def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True
 
 
 if __name__ == '__main__':
-    generate_data(50, multi=False, disambiguate=False, temporal_reasoning=True)
-    generate_data(50, multi=False, disambiguate=True, temporal_reasoning=True)
-    generate_data(50, multi=True, disambiguate=False, temporal_reasoning=True)
-    generate_data(50, multi=True, disambiguate=True, temporal_reasoning=False)
+    k = 50
+    for multi in [False, True]:
+        for temporal_reasoning in [False, True]:
+            for disambiguate in [False, True]:
+                generate_data(k, multi=multi, disambiguate=disambiguate, temporal_reasoning=temporal_reasoning)
