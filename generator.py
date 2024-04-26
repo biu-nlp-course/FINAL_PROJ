@@ -24,7 +24,7 @@ class Generator:
         suffix = " with possibly others in between" if self.disambiguate else ""
 
         before_sen = f"{a} {verb} {before} {b}{suffix}."
-        after_sen = f"{b} came {after} {a}{suffix}."
+        after_sen = f"{b} {verb} {after} {a}{suffix}."
         sentences = [before_sen, after_sen]
         return random.choice(sentences)
 
