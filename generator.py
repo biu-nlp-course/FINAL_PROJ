@@ -21,7 +21,7 @@ class Generator:
         after = random.choice(grammar["after"])
         before = random.choice(grammar["before"])
         verb = random.choice(grammar["verb"])
-        suffix = " with possibly others in between" if self.disambiguate else ""
+        suffix = ", with possibly others in between" if self.disambiguate else ""
 
         before_sen = f"{a} {verb} {before} {b}{suffix}."
         after_sen = f"{b} {verb} {after} {a}{suffix}."
@@ -42,7 +42,7 @@ class Generator:
         for a in G.nodes:
             for b in G.nodes:
                 if a != b and not G.has_edge(a, b):
-                    possible_conclusions.append([[a, b], self.get_relation(G, a, b)])
+                    possible_conclusions.append([[mapping[a], mapping[b]], self.get_relation(G, a, b)])
         if draw_graph:
             self.draw_graph(G, mapping)
 

@@ -1,71 +1,71 @@
 [
   {
     "sentences": [
-      "Rina came subsequent to Moshe with possibly others in between.",
-      "Rina came subsequent to Emily with possibly others in between.",
-      "Emily appeared previous to Shuli with possibly others in between."
+      "Judith entered before Rina, with possibly others in between.",
+      "Rina entered later than Moshe, with possibly others in between.",
+      "David showed up earlier than Rina, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          2
+          "Judith",
+          "David"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          0
+          "Judith",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Judith"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          2
+          "Rina",
+          "David"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
+          "Rina",
+          "Moshe"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          1
+          "Moshe",
+          "Judith"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          2
+          "Moshe",
+          "David"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -73,71 +73,215 @@
   },
   {
     "sentences": [
-      "Judith came before David with possibly others in between.",
-      "Judith came following Shuli with possibly others in between.",
-      "Judith came subsequent to Rina with possibly others in between."
+      "Shuli entered earlier than Judith, with possibly others in between.",
+      "John showed up later than Rina, with possibly others in between.",
+      "Judith came after Rina, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Judith",
+          "Rina"
         ],
         "FALSE"
       ],
       [
         [
-          0,
-          2
+          "Judith",
+          "Shuli"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          2
+          "Judith",
+          "John"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          3
+          "Rina",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "David showed up earlier than John, with possibly others in between.",
+      "David showed up before Dylan, with possibly others in between.",
+      "Rina arrived after Dylan, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Dylan",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Rina"
         ],
         "TRUE"
       ],
       [
         [
-          2,
-          1
+          "John",
+          "Dylan"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          3
+          "John",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Bob came later than Judith, with possibly others in between.",
+      "Bob came prior to Rina, with possibly others in between.",
+      "Judith arrived before John, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "John",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Rina"
         ],
         "TRUE"
       ],
       [
         [
-          3,
-          0
+          "Rina",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Judith"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          1
+          "Rina",
+          "Bob"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          2
+          "Bob",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Judith"
         ],
         "FALSE"
       ]
@@ -145,359 +289,71 @@
   },
   {
     "sentences": [
-      "Emily came after Rina with possibly others in between.",
-      "Emily came after Dylan with possibly others in between.",
-      "David came prior to Emily with possibly others in between."
+      "John arrived prior to Judith, with possibly others in between.",
+      "Bob entered before John, with possibly others in between.",
+      "John arrived after Emily, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
+          "Judith",
+          "John"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          1
+          "Judith",
+          "Emily"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          3
+          "Judith",
+          "Bob"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Shuli arrived prior to Moshe with possibly others in between.",
-      "Moshe came subsequent to Judith with possibly others in between.",
-      "Judith came before Bob with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
+          "John",
+          "Emily"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
+          "John",
+          "Bob"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Judith came following Emily with possibly others in between.",
-      "Moshe came following Emily with possibly others in between.",
-      "Moshe came after Dylan with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Judith came subsequent to Dylan with possibly others in between.",
-      "Judith came subsequent to Moshe with possibly others in between.",
-      "Dylan came before Bob with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Emily came after David with possibly others in between.",
-      "Judith came following John with possibly others in between.",
-      "Emily came following Judith with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
+          "Emily",
+          "Judith"
         ],
         "TRUE"
       ],
       [
         [
-          3,
-          2
+          "Emily",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Judith"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Bob",
+          "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -505,287 +361,71 @@
   },
   {
     "sentences": [
-      "Rina appeared preceding Emily with possibly others in between.",
-      "David came following Shuli with possibly others in between.",
-      "Shuli came following Rina with possibly others in between."
+      "John arrived earlier than Emily, with possibly others in between.",
+      "Judith showed up later than John, with possibly others in between.",
+      "Judith entered earlier than Dylan, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Judith",
+          "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          2
+          "Judith",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          3
+          "Emily",
+          "John"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          0
+          "Emily",
+          "Dylan"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "TRUE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Shuli came after Rina with possibly others in between.",
-      "Moshe came before Rina with possibly others in between.",
-      "Bob came preceding Rina with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
+          "John",
+          "Dylan"
         ],
         "TRUE"
       ],
       [
         [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
+          "Dylan",
+          "Judith"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
+          "Dylan",
+          "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          2
-        ],
-        "TRUE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Bob came after Emily with possibly others in between.",
-      "Bob came after David with possibly others in between.",
-      "David came before Judith with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Moshe came following Dylan with possibly others in between.",
-      "Judith came following Dylan with possibly others in between.",
-      "Bob arrived before Dylan with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
+          "Dylan",
+          "John"
         ],
         "FALSE"
       ]
@@ -793,71 +433,71 @@
   },
   {
     "sentences": [
-      "Emily came preceding Rina with possibly others in between.",
-      "Emily arrived preceding David with possibly others in between.",
-      "Shuli came subsequent to David with possibly others in between."
+      "John showed up later than Rina, with possibly others in between.",
+      "Rina entered later than Bob, with possibly others in between.",
+      "Moshe came prior to Rina, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Bob",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
+          "Bob",
+          "John"
         ],
         "TRUE"
       ],
       [
         [
-          3,
-          1
+          "Moshe",
+          "Bob"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          2
+          "Moshe",
+          "John"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "John",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Moshe"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Moshe"
         ],
         "FALSE"
       ]
@@ -865,143 +505,71 @@
   },
   {
     "sentences": [
-      "Emily appeared preceding David with possibly others in between.",
-      "Moshe came prior to Emily with possibly others in between.",
-      "Emily came subsequent to Bob with possibly others in between."
+      "Rina arrived later than Shuli, with possibly others in between.",
+      "Shuli showed up before Bob, with possibly others in between.",
+      "Shuli showed up before Dylan, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Rina",
+          "Shuli"
         ],
-        "TRUE"
+        "FALSE"
       ],
       [
         [
-          0,
-          2
+          "Rina",
+          "Bob"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
+          "Rina",
+          "Dylan"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          1
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          3,
-          0
+          "Bob",
+          "Shuli"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          2
-        ],
-        "FALSE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Moshe arrived prior to Judith with possibly others in between.",
-      "Dylan arrived preceding David with possibly others in between.",
-      "Moshe appeared before David with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          2
+          "Bob",
+          "Rina"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          0
+          "Bob",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "Shuli"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
+          "Dylan",
+          "Rina"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
+          "Dylan",
+          "Bob"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -1009,71 +577,143 @@
   },
   {
     "sentences": [
-      "Moshe arrived before David with possibly others in between.",
-      "Moshe came subsequent to Rina with possibly others in between.",
-      "Emily came after Moshe with possibly others in between."
+      "Moshe came later than Shuli, with possibly others in between.",
+      "Moshe came later than John, with possibly others in between.",
+      "Judith came earlier than Moshe, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Shuli",
+          "Judith"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
+          "Shuli",
+          "John"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          2
+          "Judith",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Shuli"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          3
+          "Moshe",
+          "Judith"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          3
+          "Moshe",
+          "John"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          0
+          "John",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "John arrived prior to Emily, with possibly others in between.",
+      "Emily arrived later than Shuli, with possibly others in between.",
+      "Bob arrived later than Emily, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Shuli",
+          "Bob"
         ],
         "TRUE"
       ],
       [
         [
-          3,
-          1
+          "Shuli",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Bob"
         ],
         "TRUE"
       ]
@@ -1081,215 +721,71 @@
   },
   {
     "sentences": [
-      "Shuli came before Judith with possibly others in between.",
-      "Shuli came following Moshe with possibly others in between.",
-      "Moshe came earlier than Bob with possibly others in between."
+      "Shuli entered before Judith, with possibly others in between.",
+      "Moshe entered later than Rina, with possibly others in between.",
+      "Rina showed up prior to Shuli, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Judith",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          2
+          "Judith",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Judith"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          3
+          "Moshe",
+          "Rina"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          0
+          "Moshe",
+          "Shuli"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "TRUE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Rina came prior to Moshe with possibly others in between.",
-      "David came prior to Bob with possibly others in between.",
-      "David came after Rina with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          2
+          "Rina",
+          "Judith"
         ],
         "TRUE"
       ],
       [
         [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
+          "Shuli",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Emily came after Bob with possibly others in between.",
-      "Judith came after Emily with possibly others in between.",
-      "David came after Bob with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
+          "Shuli",
+          "Rina"
         ],
         "FALSE"
       ]
@@ -1297,143 +793,71 @@
   },
   {
     "sentences": [
-      "John arrived earlier than Emily with possibly others in between.",
-      "Shuli appeared preceding David with possibly others in between.",
-      "Emily came following David with possibly others in between."
+      "Emily showed up later than David, with possibly others in between.",
+      "Moshe arrived later than John, with possibly others in between.",
+      "John arrived later than David, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Emily",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "John"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
+          "Emily",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "TRUE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Moshe came following Bob with possibly others in between.",
-      "Rina came preceding Moshe with possibly others in between.",
-      "David came prior to Rina with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
+          "David",
+          "Moshe"
         ],
         "TRUE"
       ],
       [
         [
-          2,
-          1
+          "John",
+          "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "John",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          2
+          "Moshe",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "John"
         ],
         "FALSE"
       ]
@@ -1441,71 +865,71 @@
   },
   {
     "sentences": [
-      "Bob came prior to Emily with possibly others in between.",
-      "Rina came earlier than Dylan with possibly others in between.",
-      "Emily came subsequent to Rina with possibly others in between."
+      "Moshe arrived after Bob, with possibly others in between.",
+      "Judith showed up before John, with possibly others in between.",
+      "Moshe arrived later than Judith, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Moshe",
+          "John"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
+          "Moshe",
+          "Bob"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          0
+          "Moshe",
+          "Judith"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          1
+          "John",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          3
+          "John",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Judith"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          0
+          "Bob",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Bob"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -1513,71 +937,71 @@
   },
   {
     "sentences": [
-      "Moshe came subsequent to Rina with possibly others in between.",
-      "Bob came after Moshe with possibly others in between.",
-      "Rina arrived prior to Shuli with possibly others in between."
+      "Shuli showed up earlier than Rina, with possibly others in between.",
+      "David came prior to Bob, with possibly others in between.",
+      "Bob came later than Shuli, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Bob",
+          "Shuli"
         ],
         "FALSE"
       ],
       [
         [
-          0,
-          2
+          "Bob",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Rina"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          2,
-          0
+          "Shuli",
+          "David"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
+          "David",
+          "Shuli"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "David",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Shuli"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          2
+          "Rina",
+          "David"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -1585,143 +1009,71 @@
   },
   {
     "sentences": [
-      "Bob arrived preceding Dylan with possibly others in between.",
-      "Emily came subsequent to Dylan with possibly others in between.",
-      "Dylan came after David with possibly others in between."
+      "Bob showed up after Dylan, with possibly others in between.",
+      "David showed up before Dylan, with possibly others in between.",
+      "David came earlier than Judith, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Dylan",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Bob"
         ],
         "TRUE"
       ],
       [
         [
-          0,
-          3
+          "Judith",
+          "Dylan"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          0
+          "Judith",
+          "Bob"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
-        ],
-        "TRUE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Emily came previous to John with possibly others in between.",
-      "Shuli came following David with possibly others in between.",
-      "Shuli came following John with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
+          "Judith",
+          "David"
         ],
         "FALSE"
       ]
@@ -1729,71 +1081,71 @@
   },
   {
     "sentences": [
-      "Shuli came earlier than Emily with possibly others in between.",
-      "Emily appeared previous to Rina with possibly others in between.",
-      "Shuli appeared previous to Judith with possibly others in between."
+      "Judith showed up before Rina, with possibly others in between.",
+      "Rina showed up after John, with possibly others in between.",
+      "Rina entered after Emily, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          2
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          1,
-          0
+          "Rina",
+          "Judith"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          2
+          "Rina",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          3
+          "Judith",
+          "John"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
+          "Emily",
+          "Judith"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          3
+          "Emily",
+          "John"
         ],
-        "FALSE"
+        "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          0
+          "John",
+          "Judith"
         ],
-        "FALSE"
+        "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "John",
+          "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -1801,71 +1153,71 @@
   },
   {
     "sentences": [
-      "Moshe came after Rina with possibly others in between.",
-      "John came before Rina with possibly others in between.",
-      "John arrived preceding David with possibly others in between."
+      "John arrived earlier than Judith, with possibly others in between.",
+      "Shuli arrived before John, with possibly others in between.",
+      "John entered earlier than Rina, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
+          "Judith",
+          "Rina"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          2
+          "Judith",
+          "Shuli"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          3
+          "Judith",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Judith"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          0
+          "Rina",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Judith"
         ],
         "TRUE"
       ],
       [
         [
-          3,
-          0
+          "Shuli",
+          "Rina"
         ],
-        "UNABLE_TO_DETERMINE"
+        "TRUE"
       ],
       [
         [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
+          "John",
+          "Shuli"
         ],
         "FALSE"
       ]
@@ -1873,215 +1225,71 @@
   },
   {
     "sentences": [
-      "Rina arrived previous to Moshe with possibly others in between.",
-      "Rina appeared prior to Dylan with possibly others in between.",
-      "Moshe came following Bob with possibly others in between."
+      "Dylan arrived prior to Emily, with possibly others in between.",
+      "Moshe came prior to Emily, with possibly others in between.",
+      "Moshe arrived later than John, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "FALSE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Moshe came preceding Shuli with possibly others in between.",
-      "Shuli came subsequent to Emily with possibly others in between.",
-      "Bob came before Shuli with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "FALSE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Bob came earlier than David with possibly others in between.",
-      "Bob came after John with possibly others in between.",
-      "Judith came previous to Bob with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
+          "John",
+          "Emily"
         ],
         "TRUE"
       ],
       [
         [
-          2,
-          3
+          "John",
+          "Dylan"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "Moshe",
+          "John"
         ],
-        "TRUE"
+        "FALSE"
       ],
       [
         [
-          3,
-          2
+          "Moshe",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Moshe"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -2089,143 +1297,71 @@
   },
   {
     "sentences": [
-      "Judith came previous to Dylan with possibly others in between.",
-      "David came prior to Rina with possibly others in between.",
-      "Rina came following Dylan with possibly others in between."
+      "David came before Shuli, with possibly others in between.",
+      "Rina entered before Shuli, with possibly others in between.",
+      "David showed up before Bob, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          0,
-          2
+          "David",
+          "Rina"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          0
+          "Bob",
+          "David"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          2
+          "Bob",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "David"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
+          "Shuli",
+          "Bob"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Bob arrived earlier than David with possibly others in between.",
-      "Moshe came after Shuli with possibly others in between.",
-      "Bob came after Shuli with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
+          "Shuli",
+          "Rina"
         ],
         "FALSE"
       ]
@@ -2233,71 +1369,71 @@
   },
   {
     "sentences": [
-      "Emily came following Judith with possibly others in between.",
-      "John came after David with possibly others in between.",
-      "John arrived before Emily with possibly others in between."
+      "Moshe came after Emily, with possibly others in between.",
+      "Moshe entered after Bob, with possibly others in between.",
+      "David showed up later than Emily, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          1,
-          3
+          "Bob",
+          "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          1
+          "Bob",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Bob"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          3
+          "Moshe",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "David"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "David",
+          "Bob"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          2
+          "David",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -2305,71 +1441,71 @@
   },
   {
     "sentences": [
-      "Shuli came before Emily with possibly others in between.",
-      "Emily came subsequent to Judith with possibly others in between.",
-      "Rina came subsequent to Emily with possibly others in between."
+      "Bob entered earlier than John, with possibly others in between.",
+      "Bob entered earlier than Rina, with possibly others in between.",
+      "Bob showed up prior to Shuli, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "Shuli",
+          "John"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          0,
-          2
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          1,
-          0
+          "Shuli",
+          "Rina"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          2
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          2,
-          0
+          "Shuli",
+          "Bob"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          1
+          "John",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Bob"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          3
+          "Rina",
+          "Shuli"
         ],
-        "FALSE"
+        "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          0
+          "Rina",
+          "John"
         ],
-        "FALSE"
+        "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "Rina",
+          "Bob"
         ],
         "FALSE"
       ]
@@ -2377,647 +1513,71 @@
   },
   {
     "sentences": [
-      "Rina arrived previous to Bob with possibly others in between.",
-      "Moshe came following Bob with possibly others in between.",
-      "Emily appeared prior to Moshe with possibly others in between."
+      "Shuli arrived earlier than Moshe, with possibly others in between.",
+      "Bob showed up after David, with possibly others in between.",
+      "Bob entered later than Moshe, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          1,
-          3
+          "David",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
+          "David",
+          "Shuli"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "Moshe",
+          "David"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "John came prior to David with possibly others in between.",
-      "Moshe came subsequent to Shuli with possibly others in between.",
-      "Shuli arrived before David with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          2
+          "Moshe",
+          "Shuli"
         ],
         "FALSE"
       ],
       [
         [
-          0,
-          3
+          "Bob",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Moshe"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "David"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Shuli came previous to Judith with possibly others in between.",
-      "Rina came after Shuli with possibly others in between.",
-      "Emily came subsequent to Judith with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          2
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Dylan came following John with possibly others in between.",
-      "Judith came prior to Dylan with possibly others in between.",
-      "Bob came previous to John with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Rina arrived preceding John with possibly others in between.",
-      "Bob appeared prior to Rina with possibly others in between.",
-      "Judith came after Rina with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "FALSE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Judith came subsequent to John with possibly others in between.",
-      "Bob came subsequent to Judith with possibly others in between.",
-      "Dylan came before Judith with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "FALSE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Moshe came prior to Bob with possibly others in between.",
-      "David came after Bob with possibly others in between.",
-      "Bob came after Emily with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "FALSE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Judith came following Dylan with possibly others in between.",
-      "Dylan came preceding Emily with possibly others in between.",
-      "Bob came earlier than Dylan with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "TRUE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "FALSE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Emily came before Bob with possibly others in between.",
-      "Emily came subsequent to Judith with possibly others in between.",
-      "Judith arrived earlier than David with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          0
+          "Shuli",
+          "Bob"
         ],
         "TRUE"
       ]
@@ -3025,287 +1585,359 @@
   },
   {
     "sentences": [
-      "Moshe came after Rina with possibly others in between.",
-      "John came after Emily with possibly others in between.",
-      "Rina came preceding John with possibly others in between."
+      "Shuli showed up after Dylan, with possibly others in between.",
+      "Dylan came after Emily, with possibly others in between.",
+      "Moshe arrived later than Dylan, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
+          "Dylan",
+          "Emily"
         ],
         "FALSE"
       ],
       [
         [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Emily came following Moshe with possibly others in between.",
-      "John came preceding Rina with possibly others in between.",
-      "Rina came after Moshe with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "FALSE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Emily appeared earlier than David with possibly others in between.",
-      "David came subsequent to Judith with possibly others in between.",
-      "Judith came following Moshe with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
+          "Emily",
+          "Moshe"
         ],
         "TRUE"
       ],
       [
         [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "David came after Moshe with possibly others in between.",
-      "Moshe came subsequent to Dylan with possibly others in between.",
-      "Dylan came preceding Judith with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          0,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          2
+          "Emily",
+          "Shuli"
         ],
         "TRUE"
       ],
       [
         [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          1
+          "Moshe",
+          "Dylan"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          3
+          "Moshe",
+          "Emily"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          0
+          "Moshe",
+          "Shuli"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "Shuli",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Shuli showed up after John, with possibly others in between.",
+      "Judith arrived later than John, with possibly others in between.",
+      "Shuli came later than Emily, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "John showed up later than Rina, with possibly others in between.",
+      "David came prior to John, with possibly others in between.",
+      "Dylan showed up after David, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "David",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "David showed up before Moshe, with possibly others in between.",
+      "Emily arrived earlier than Shuli, with possibly others in between.",
+      "David entered before Shuli, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Emily",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "John arrived prior to Judith, with possibly others in between.",
+      "Bob came before Judith, with possibly others in between.",
+      "Moshe came later than John, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "John",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Bob"
         ],
         "FALSE"
       ]
@@ -3313,215 +1945,287 @@
   },
   {
     "sentences": [
-      "Emily appeared earlier than Rina with possibly others in between.",
-      "John came after Judith with possibly others in between.",
-      "John arrived before Rina with possibly others in between."
+      "Shuli showed up before Moshe, with possibly others in between.",
+      "Shuli came before Rina, with possibly others in between.",
+      "Rina showed up after David, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
+          "David",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Shuli showed up after Judith, with possibly others in between.",
+      "John arrived before Judith, with possibly others in between.",
+      "Dylan entered later than John, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Shuli",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Shuli"
+        ],
+        "TRUE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Dylan came prior to Moshe, with possibly others in between.",
+      "Rina entered after Dylan, with possibly others in between.",
+      "Judith entered after Dylan, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Moshe",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Emily arrived prior to Bob, with possibly others in between.",
+      "Rina arrived earlier than Emily, with possibly others in between.",
+      "Dylan showed up prior to Emily, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Bob",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
         ],
         "TRUE"
       ],
       [
         [
-          0,
-          2
+          "Rina",
+          "Dylan"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Bob appeared previous to David with possibly others in between.",
-      "Dylan came after Emily with possibly others in between.",
-      "David came after Emily with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          2
-        ],
-        "UNABLE_TO_DETERMINE"
-      ]
-    ]
-  },
-  {
-    "sentences": [
-      "Dylan arrived earlier than John with possibly others in between.",
-      "David came subsequent to Bob with possibly others in between.",
-      "John came subsequent to David with possibly others in between."
-    ],
-    "possible_conclusions": [
-      [
-        [
-          0,
-          2
+          "Dylan",
+          "Bob"
         ],
         "TRUE"
       ],
       [
         [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          1
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          2,
-          3
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          3,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          3,
-          1
+          "Dylan",
+          "Rina"
         ],
         "UNABLE_TO_DETERMINE"
       ]
@@ -3529,73 +2233,1369 @@
   },
   {
     "sentences": [
-      "Judith came earlier than Dylan with possibly others in between.",
-      "Emily arrived before Dylan with possibly others in between.",
-      "Moshe arrived earlier than Dylan with possibly others in between."
+      "Emily came later than Bob, with possibly others in between.",
+      "Emily came prior to Judith, with possibly others in between.",
+      "David arrived before Emily, with possibly others in between."
     ],
     "possible_conclusions": [
       [
         [
-          0,
-          1
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          0,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          0
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          1,
-          3
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          2,
-          0
+          "Judith",
+          "David"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          1
+          "Judith",
+          "Emily"
         ],
         "FALSE"
       ],
       [
         [
-          2,
-          3
+          "Judith",
+          "Bob"
         ],
         "FALSE"
       ],
       [
         [
-          3,
-          0
+          "David",
+          "Judith"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "David",
+          "Bob"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          3,
-          1
+          "Emily",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Judith"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Bob",
+          "David"
         ],
         "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "David entered later than Judith, with possibly others in between.",
+      "David entered prior to Emily, with possibly others in between.",
+      "David entered later than Dylan, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Judith",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Emily"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Dylan",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "Emily"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "David",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "David"
+        ],
+        "FALSE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "David arrived after John, with possibly others in between.",
+      "David arrived earlier than Dylan, with possibly others in between.",
+      "Emily came prior to Dylan, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Dylan",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Dylan"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "John",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "John"
+        ],
+        "FALSE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "David entered earlier than Bob, with possibly others in between.",
+      "Shuli showed up before Rina, with possibly others in between.",
+      "David came later than Shuli, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "David",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "Bob"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Rina",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Rina came before Moshe, with possibly others in between.",
+      "David arrived prior to Bob, with possibly others in between.",
+      "David came later than Rina, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Moshe",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Bob",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Rina"
+        ],
+        "FALSE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Moshe showed up after Bob, with possibly others in between.",
+      "Shuli showed up before Bob, with possibly others in between.",
+      "Dylan came prior to Bob, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Bob",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Moshe"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Shuli",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "Moshe"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Dylan",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Emily showed up after Judith, with possibly others in between.",
+      "Dylan showed up earlier than Shuli, with possibly others in between.",
+      "Shuli came later than Emily, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Dylan",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Shuli"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Shuli",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Judith"
+        ],
+        "FALSE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Judith entered before Shuli, with possibly others in between.",
+      "Dylan showed up before Shuli, with possibly others in between.",
+      "Shuli entered after Emily, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Judith",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Bob entered later than Emily, with possibly others in between.",
+      "Shuli entered prior to Rina, with possibly others in between.",
+      "Shuli arrived prior to Bob, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Shuli",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Emily arrived later than Bob, with possibly others in between.",
+      "Bob came later than Rina, with possibly others in between.",
+      "Rina showed up before John, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Bob",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Emily"
+        ],
+        "TRUE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Dylan came before Moshe, with possibly others in between.",
+      "Bob showed up after Dylan, with possibly others in between.",
+      "Dylan arrived after Emily, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Emily",
+          "Bob"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Emily",
+          "Moshe"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Bob",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Bob",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Dylan",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Dylan"
+        ],
+        "FALSE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "John entered later than David, with possibly others in between.",
+      "Judith came before Emily, with possibly others in between.",
+      "John came later than Judith, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "David",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Emily entered before David, with possibly others in between.",
+      "John entered prior to David, with possibly others in between.",
+      "Emily showed up after Rina, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Rina",
+          "David"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Rina",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Emily entered earlier than Moshe, with possibly others in between.",
+      "Emily came later than David, with possibly others in between.",
+      "Rina came prior to Emily, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "David",
+          "Moshe"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "David",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "David"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Moshe"
+        ],
+        "TRUE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Shuli came after Rina, with possibly others in between.",
+      "Emily came later than Shuli, with possibly others in between.",
+      "Shuli came later than John, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Emily"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Emily"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Rina",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "Rina"
+        ],
+        "FALSE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "John came later than Emily, with possibly others in between.",
+      "Dylan showed up after Shuli, with possibly others in between.",
+      "Dylan showed up after John, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Shuli",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "John"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Shuli"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Dylan"
+        ],
+        "TRUE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Dylan came before Moshe, with possibly others in between.",
+      "Dylan showed up after Bob, with possibly others in between.",
+      "Dylan entered prior to Rina, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Bob",
+          "Moshe"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Bob",
+          "Rina"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Moshe",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Rina",
+          "Dylan"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Bob"
+        ],
+        "FALSE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "Moshe showed up later than Shuli, with possibly others in between.",
+      "Shuli entered before Bob, with possibly others in between.",
+      "Dylan showed up after Moshe, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Dylan",
+          "Moshe"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Dylan",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Moshe",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Shuli",
+          "Dylan"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Bob",
+          "Dylan"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Shuli"
+        ],
+        "FALSE"
+      ]
+    ]
+  },
+  {
+    "sentences": [
+      "David showed up after Bob, with possibly others in between.",
+      "Emily showed up earlier than Bob, with possibly others in between.",
+      "David entered after Judith, with possibly others in between."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Bob",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "Judith"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "David"
+        ],
+        "TRUE"
       ]
     ]
   }
