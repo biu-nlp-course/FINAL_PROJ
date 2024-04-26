@@ -37,8 +37,3 @@ class MultiChoiceGenerator(Generator):
             return "FALSE"
         else:
             return "UNABLE_TO_DETERMINE"
-
-N=4
-multi_choice_generator = MultiChoiceGenerator(disambiguate=False, temporal_reasoning=False)
-multi_choice_graph = multi_choice_generator.create_directed_path_graph(N)
-print(multi_choice_generator.generate_passage(multi_choice_graph, draw_graph=True))
