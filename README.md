@@ -2,7 +2,6 @@
 FINAL_PROJ
 
 
-Currently just temporal, spatial is WIP. 
 
 1. To create sets: see main.py
 
