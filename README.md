@@ -12,7 +12,7 @@ Currently just temporal, spatial is WIP.
 
 
 
-3. To generate graph, use the generator's:
+3. Drawing graph can be done using the generator's generate_passage routine with the *draw_graph* flag:
     `generator.generate_passage(graph, draw_graph=True)`
 This will create:
 
