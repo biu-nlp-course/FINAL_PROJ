@@ -2,6 +2,7 @@ from multi_choice_generator import MultiChoiceGenerator
 from single_choice_generator import SingleChoiceGenerator
 import json
 
+
 def generate_data(k=50, multi=False, disambiguate=False):
     if multi:
         generator = MultiChoiceGenerator(disambiguate=disambiguate)
@@ -16,8 +17,8 @@ def generate_data(k=50, multi=False, disambiguate=False):
 
     output = []
     for i in range(k):
-        N = 4
-        graph = generator.create_directed_path_graph(N)
+        n = 4
+        graph = generator.create_directed_path_graph(n)
         passage = generator.generate_passage(graph, draw_graph=False)
         output.append(passage)
 
