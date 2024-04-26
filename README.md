@@ -13,7 +13,9 @@ Currently just temporal, spatial is WIP.
 
 
 3. Drawing graph can be done using the generator's generate_passage routine with the *draw_graph* flag:
-    `generator.generate_passage(graph, draw_graph=True)`
+    `generator.generate_passage(graph, draw_graph=True)` .
+
+
 This will create:
 
 ![img.png](img.png)
