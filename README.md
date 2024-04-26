@@ -4,11 +4,14 @@ FINAL_PROJ
 
 1. To create sets: see main.py
 
-2. To create a single passage of some kind (multi/single, disambiguate/ambigious)
+
+
+2. To create a single passage of some kind (multi/single, disambiguate/ambiguous)
     uncomment the lines in the bottom of single_choice_generator.py, multi_choice_generator.py
 
 
-3. To generate graph, use generator's (i.e SingleChoiceGenerator):
+
+3. To generate graph, use the generator's:
     `generator.generate_passage(graph, draw_graph=True)`
 This will create:
 
