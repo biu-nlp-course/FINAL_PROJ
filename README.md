@@ -2,8 +2,9 @@
 FINAL_PROJ
 
 
-1. To create sets: see main.py
+Currently just temporal, spatial is WIP. 
 
+1. To create sets: see main.py
 
 
 2. To create a single passage of some kind (multi/single, disambiguate/ambiguous)
