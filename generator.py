@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 import json
 import random
 
-# Read JSON data from a file
 with open('grammar.json', 'r') as file:
     grammar = json.load(file)
 
 
 class Generator:
-    def __init__(self, disambiguate=False):
+    def __init__(self, disambiguate=False, temporal_reasoning=True ):
+        self.temporal_reasoning = temporal_reasoning
         self.disambiguate = disambiguate
 
     def draw_graph(self, G, labels):
@@ -18,10 +18,15 @@ class Generator:
         plt.show()
 
     def get_ordered_clause(self, a, b):
-        after = random.choice(grammar["after"])
-        before = random.choice(grammar["before"])
-        verb = random.choice(grammar["verb"])
         suffix = " with possibly others in between" if self.disambiguate else ""
+        if self.temporal_reasoning:
+            before = random.choice(grammar["temporal"]["left"])
+            after = random.choice(grammar["temporal"]["right"])
+            verb = random.choice(grammar["temporal"]["verb"])
+        else:
+            before = random.choice(grammar["spatial"]["left"])
+            after = random.choice(grammar["spatial"]["right"])
+            verb = random.choice(grammar["spatial"]["verb"])
 
         before_sen = f"{a} {verb} {before} {b}{suffix}."
         after_sen = f"{b} {verb} {after} {a}{suffix}."

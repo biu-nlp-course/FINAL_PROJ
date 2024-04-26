@@ -2,16 +2,17 @@ from multi_choice_generator import MultiChoiceGenerator
 from single_choice_generator import SingleChoiceGenerator
 import json
 
-def generate_data(k=50, multi=False, disambiguate=False):
+def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True):
     if multi:
-        generator = MultiChoiceGenerator(disambiguate=disambiguate)
+        generator = MultiChoiceGenerator(disambiguate=disambiguate, temporal_reasoning=temporal_reasoning)
     else:
-        generator = SingleChoiceGenerator(disambiguate=disambiguate)
+        generator = SingleChoiceGenerator(disambiguate=disambiguate, temporal_reasoning=temporal_reasoning)
 
     output_file = f"OUTPUTTED_DATASETS/"
+    output_file += "temporal_" if temporal_reasoning else "spatial_"
     output_file += "multi" if multi else "single"
     output_file += "_disambiguate" if disambiguate else ""
-    output_file += f"_{k}passages"
+    output_file += f"_{k}_passages"
     output_file += ".json"
 
     output = []
@@ -26,7 +27,7 @@ def generate_data(k=50, multi=False, disambiguate=False):
 
 
 if __name__ == '__main__':
-    generate_data(50, multi=False, disambiguate=False)
-    generate_data(50, multi=False, disambiguate=True)
-    generate_data(50, multi=True, disambiguate=False)
-    generate_data(50, multi=True, disambiguate=True)
+    generate_data(50, multi=False, disambiguate=False, temporal_reasoning=True)
+    generate_data(50, multi=False, disambiguate=True, temporal_reasoning=True)
+    generate_data(50, multi=True, disambiguate=False, temporal_reasoning=True)
+    generate_data(50, multi=True, disambiguate=True, temporal_reasoning=False)

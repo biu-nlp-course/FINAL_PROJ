@@ -1,6 +1,49 @@
 {
-  "names": ["Bob", "Dylan", "Moshe", "Rina", "Shuli", "John", "David", "Emily", "Judith"],
-  "before": ["before", "prior to", "earlier than", "preceding", "previous to"],
-  "after": ["after", "following", "subsequent to"],
-  "verb": ["came", "arrived", "appeared"]
+  "names": [
+    "Bob",
+    "Dylan",
+    "Moshe",
+    "Rina",
+    "Shuli",
+    "John",
+    "David",
+    "Emily",
+    "Judith"
+  ],
+  "temporal": {
+    "left": [
+      "before",
+      "prior to",
+      "earlier than",
+      "preceding",
+      "previous to"
+    ],
+    "right": [
+      "after",
+      "following",
+      "subsequent to"
+    ],
+    "verb": [
+      "came",
+      "arrived",
+      "appeared"
+    ]
+  },
+  "spatial": {
+    "left": [
+      "to the left of",
+      "on the left side of",
+      "leftward from"
+    ],
+    "right": [
+      "to the right of",
+      "on the right side of",
+      "right from"
+    ],
+    "verb": [
+      "stands",
+      "is",
+      "is positioned"
+    ]
+  }
 }
