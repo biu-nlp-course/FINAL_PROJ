@@ -1,10 +1,6 @@
 import networkx as nx
 from generator import Generator
-import json
 import random
-
-with open('grammar.json', 'r') as file:
-    grammar = json.load(file)
 
 
 class MultiChoiceGenerator(Generator):

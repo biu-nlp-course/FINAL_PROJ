@@ -1,9 +1,6 @@
 import networkx as nx
 from generator import Generator
-import json
 
-with open('grammar.json', 'r') as file:
-    grammar = json.load(file)
 
 
 class SingleChoiceGenerator(Generator):
