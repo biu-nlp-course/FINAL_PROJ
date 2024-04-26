@@ -19,10 +19,10 @@ class Generator:
         plt.show()
 
     def get_ordered_clause(self, a, b):
-        suffix = ", with possibly others in between" if self.disambiguate else ""
+        suffix = ", possibly with others in between" if self.disambiguate else ""
         if self.temporal_reasoning:
-            before = random.choice(grammar["temporal"]["left"])
-            after = random.choice(grammar["temporal"]["right"])
+            before = random.choice(grammar["temporal"]["before"])
+            after = random.choice(grammar["temporal"]["after"])
             verb = random.choice(grammar["temporal"]["verb"])
         else:
             before = random.choice(grammar["spatial"]["left"])

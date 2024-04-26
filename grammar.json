@@ -11,18 +11,19 @@
     "Judith"
   ],
   "temporal": {
-    "left": [
+    "before": [
       "before",
       "prior to",
       "earlier than"
     ],
-    "right": [
+    "after": [
       "after",
       "later than"
     ],
     "verb": [
       "came",
-      "showed up", "entered"
+      "showed up",
+      "entered"
     ]
   },
   "spatial": {
@@ -34,7 +35,7 @@
     "right": [
       "to the right of",
       "on the right side of",
-      "right from"
+      "rightward from"
     ],
     "verb": [
       "stands",
