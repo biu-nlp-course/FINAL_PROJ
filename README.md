@@ -3,15 +3,15 @@ FINAL_PROJ
 
 
 
-1. To create sets: see main.py
+1. To create sets: see generate_arrangements.py
 
 
 2. To create a single passage of some kind (multi/single, disambiguate/ambiguous)
-    uncomment the lines in the bottom of single_choice_generator.py, multi_choice_generator.py
+    uncomment the lines in the bottom of arrangements_generator/single_choice_generator.py, arrangements_generator/multi_choice_generator.py
 
 
 
-3. Drawing graph can be done using the generator's generate_passage routine with the *draw_graph* flag:
+3. Drawing graph can be done using the arrangements generator's generate_passage routine with the *draw_graph* flag:
     `generator.generate_passage(graph, draw_graph=True)` .
 
 

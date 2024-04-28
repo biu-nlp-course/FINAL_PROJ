@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import json
 import random
 
+# Read JSON data from a file
 with open('grammar.json', 'r') as file:
     grammar = json.load(file)
 
@@ -18,10 +19,10 @@ class Generator:
         plt.show()
 
     def get_ordered_clause(self, a, b):
-        suffix = " with possibly others in between" if self.disambiguate else ""
+        suffix = ", possibly with others in between" if self.disambiguate else ""
         if self.temporal_reasoning:
-            before = random.choice(grammar["temporal"]["left"])
-            after = random.choice(grammar["temporal"]["right"])
+            before = random.choice(grammar["temporal"]["before"])
+            after = random.choice(grammar["temporal"]["after"])
             verb = random.choice(grammar["temporal"]["verb"])
         else:
             before = random.choice(grammar["spatial"]["left"])
@@ -42,7 +43,7 @@ class Generator:
         print(f'mapping is {mapping}')
         all_edges = list(G.edges())
         random.shuffle(all_edges)
-        sentences = [self.get_ordered_clause(names[edge[0]], names[edge[1]]) for edge in all_edges]
+        premises = [self.get_ordered_clause(names[edge[0]], names[edge[1]]) for edge in all_edges]
         possible_conclusions = []
         for a in G.nodes:
             for b in G.nodes:
@@ -51,4 +52,4 @@ class Generator:
         if draw_graph:
             self.draw_graph(G, mapping)
 
-        return {'sentences': sentences, 'possible_conclusions': possible_conclusions}
+        return {'premises': premises, 'possible_conclusions': possible_conclusions}
