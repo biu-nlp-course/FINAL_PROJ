@@ -10,8 +10,14 @@ FINAL_PROJ
     uncomment the lines in the bottom of arrangements_generator/single_choice_generator.py, arrangements_generator/multi_choice_generator.py
 
 
+3. Prompts can be found in `/prompts/prompts.json`:
+    1. Prompts of type yes-no question are divided into 4 types. see json for futher clarification.
+       Each prompt has: 
+       1. it's prompt string (contating brackets {} to be formatted)
+       2. mapping from (TRUE, FALSE, UNABLE_TO_DETERMINE) -> suitable output of the prompt at hand.
 
-3. Drawing graph can be done using the arrangements generator's generate_passage routine with the *draw_graph* flag:
+
+4. Drawing graph can be done using the arrangements generator's generate_passage routine with the *draw_graph* flag:
     `generator.generate_passage(graph, draw_graph=True)` .
 
 

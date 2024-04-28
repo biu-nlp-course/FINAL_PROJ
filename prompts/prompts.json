@@ -1,0 +1,38 @@
+{
+  "YES-NO PROMPTS": {
+    "text1_text2_neutral": {
+      "prompt": "You are given a pair of texts.\nSay about this pair: given Text 1, is Text 2 true, false or neutral (you can’t tell if it’s true or false)?\nReply in one word.\n\nText 1: {}\nText 2: {}\n",
+      "mapping": {
+        "TRUE": "true",
+        "FALSE": "false",
+        "UNABLE_TO_DETERMINE": "neutral"
+      }
+    },
+    "entail_not_entail": {
+      "prompt": "Please identify whether the premise list entails the hypothesis. The answer should be exact ‘entail’ or ‘not entail’ \n\nPremise: {}\nHypothesis: {}\nAnswer:\n",
+      "mapping": {
+        "TRUE": "entail",
+        "FALSE": "not entail",
+        "UNABLE_TO_DETERMINE": "not entail"
+      }
+    },
+    "context_question": {
+      "prompt": "Please answer the given question based on the context. The answer should be exact “yes”, “no”, “don't know” \nContext: {}\nQuestion: {}\nAnswer:\n",
+      "mapping": {
+        "TRUE": "yes",
+        "FALSE": "no",
+        "UNABLE_TO_DETERMINE": "don't know"
+      }
+    },
+
+    "text1_text2_unable_to_determine": {
+      "prompt": "You are given a pair of texts.\nSay about this pair: given Text 1, what is the truth value of Text 2?\nThe answer should be exact ‘true’, ‘false’ or ‘unable to determine’ (Can't tell if it True/False).\n\nText 1: {}\nText 2: {}\n",
+        "mapping": {
+        "TRUE": "true",
+        "FALSE": "false",
+        "UNABLE_TO_DETERMINE": "unable to determine"
+      }
+    }
+
+  }
+}
