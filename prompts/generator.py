@@ -1,16 +1,6 @@
 import json
 
-# read json into memory
-# for each line,
-# generate type 1 first section of prompt, then for each possible conclusion insert it
-# perform query
-# parse answer
-
-
-i = 1
-
 spatial_conclusion_template = "{} is to the left of {}"
-
 
 class MultiChoiceSpatialPromptGenerator:
     def __init__(self):
