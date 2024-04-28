@@ -1,5 +1,8 @@
 import json
 
+with open('prompts/prompts.json', 'r') as prompts_json_file:
+    prompts_json = json.load(prompts_json_file)
+
 spatial_conclusion_template = "{} is to the left of {}"
 
 class MultiChoiceSpatialPromptGenerator:
@@ -7,9 +10,9 @@ class MultiChoiceSpatialPromptGenerator:
         self.data_file_path = 'OUTPUTTED_DATASETS/spatial_multi_50_passages.json'
         with open(self.data_file_path, 'r') as json_file:
             self.json_data = json.load(json_file)
-        self.prompts = [
-            "You are given a pair of texts. Say about this pair: given Text 1, is Text 2 true, false or neutral "
-            "(you can’t tell if it’s true or false)? Reply in one word. Text 1: {} Text 2: {}"]
+        yes_no_prompts = prompts_json["YES-NO PROMPTS"]
+        self.prompts = [yes_no_prompts["text1_text2_neutral"], yes_no_prompts["entail_not_entail"],
+                        yes_no_prompts["context_question"], yes_no_prompts["text1_text2_unable_to_determine"]]
 
     def get_prompts_and_expected_answers(self):
         results = []
@@ -21,7 +24,7 @@ class MultiChoiceSpatialPromptGenerator:
                 names = conclusion[0]
                 text_2 = spatial_conclusion_template.format(names[0], names[1])
                 for prompt in self.prompts:
-                    query = prompt.format(text_1, text_2)
-                    expected_answer = conclusion[1].lower()
+                    query = prompt["prompt"].format(text_1, text_2)
+                    expected_answer = prompt["mapping"][conclusion[1]]
                     results.append((query, expected_answer))
         return results
