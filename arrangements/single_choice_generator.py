@@ -1,6 +1,5 @@
 import networkx as nx
-from generator import Generator
-
+from arrangements.generator import Generator
 
 
 class SingleChoiceGenerator(Generator):
@@ -15,10 +14,7 @@ class SingleChoiceGenerator(Generator):
         else:
             return "FALSE"
 
-
-
 # N = 4   #  number of vertices
 # generator = SingleChoiceGenerator(disambiguate=True, temporal_reasoning=True)
 # directed_path_graph = generator.create_directed_path_graph(N)
 # print(generator.generate_passage(directed_path_graph, draw_graph=True))
-

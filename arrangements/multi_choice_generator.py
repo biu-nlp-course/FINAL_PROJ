@@ -1,5 +1,5 @@
 import networkx as nx
-from generator import Generator
+from arrangements.generator import Generator
 import random
 
 

@@ -43,7 +43,7 @@ class Generator:
         print(f'mapping is {mapping}')
         all_edges = list(G.edges())
         random.shuffle(all_edges)
-        sentences = [self.get_ordered_clause(names[edge[0]], names[edge[1]]) for edge in all_edges]
+        premises = [self.get_ordered_clause(names[edge[0]], names[edge[1]]) for edge in all_edges]
         possible_conclusions = []
         for a in G.nodes:
             for b in G.nodes:
@@ -52,4 +52,4 @@ class Generator:
         if draw_graph:
             self.draw_graph(G, mapping)
 
-        return {'sentences': sentences, 'possible_conclusions': possible_conclusions}
+        return {'premises': premises, 'possible_conclusions': possible_conclusions}

@@ -1,5 +1,5 @@
-from multi_choice_generator import MultiChoiceGenerator
-from single_choice_generator import SingleChoiceGenerator
+from arrangements.multi_choice_generator import MultiChoiceGenerator
+from arrangements.single_choice_generator import SingleChoiceGenerator
 import json
 
 def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True):
