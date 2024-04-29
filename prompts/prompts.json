@@ -34,5 +34,21 @@
       }
     }
 
+  },
+  "SPATIAL_POSSIBLE_ARRANGEMENTS": {
+    "with_the_number_of_the people": {
+      "prompt": "Please arrange a group of {} people in a row according to the following constraints: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{‘solution 1’: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
+    },
+    "with_the_names_of_the people": {
+      "prompt": "Please arrange a {} in a row according to the following constraints: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{‘solution 1’: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
+    }
+  },
+  "TEMPORAL_POSSIBLE_ARRANGEMENTS": {
+    "with_the_number_of_the people": {
+      "prompt": "Please provide all possible arrangements of the order of arrival of {} people to a party, given these premises: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{‘solution 1’: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
+    },
+    "with_the_names_of_the people": {
+      "prompt": "Please provide all possible arrangements of the order of arrival of {} to a party, given these premises: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{‘solution 1’: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
+    }
   }
 }

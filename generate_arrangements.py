@@ -1,6 +1,8 @@
 from arrangements.multi_choice_generator import MultiChoiceGenerator
 from arrangements.single_choice_generator import SingleChoiceGenerator
+from constants import N
 import json
+
 
 def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True):
     if multi:
@@ -17,7 +19,6 @@ def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True
 
     output = []
     for i in range(k):
-        N = 4
         graph = generator.create_directed_path_graph(N)
         passage = generator.generate_passage(graph, draw_graph=False)
         output.append(passage)
@@ -27,7 +28,7 @@ def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True
 
 
 if __name__ == '__main__':
-    k = 50
+    k = 2
     for multi in [False, True]:
         for temporal_reasoning in [False, True]:
             for disambiguate in [False, True]:
