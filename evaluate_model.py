@@ -69,3 +69,4 @@ for prompt, expected_answer in experiment_data:
     answer = response.choices[0].message.content
     print(answer)
     model_answers.append(answer)
+    break

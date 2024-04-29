@@ -9,13 +9,14 @@ with open('grammar.json', 'r') as file:
 
 
 class Generator:
-    def __init__(self, disambiguate=False, temporal_reasoning=True ):
+    def __init__(self, disambiguate=False, temporal_reasoning=True):
         self.temporal_reasoning = temporal_reasoning
         self.disambiguate = disambiguate
 
     def draw_graph(self, G, labels):
         # Draw the graph
-        nx.draw(G, labels=labels, with_labels=True, node_size=500, node_color='skyblue', font_size=12, font_weight='bold', arrows=True)
+        nx.draw(G, labels=labels, with_labels=True, node_size=500, node_color='skyblue', font_size=12,
+                font_weight='bold', arrows=True)
         plt.show()
 
     def get_ordered_clause(self, a, b):
@@ -24,13 +25,15 @@ class Generator:
             before = random.choice(grammar["temporal"]["before"])
             after = random.choice(grammar["temporal"]["after"])
             verb = random.choice(grammar["temporal"]["verb"])
+            before_sen = f"{a} {verb} {before} {b}{suffix}."
+            after_sen = f"{b} {verb} {after} {a}{suffix}."
         else:
-            before = random.choice(grammar["spatial"]["left"])
-            after = random.choice(grammar["spatial"]["right"])
+            left_relation = random.choice(grammar["spatial"]["left"])
+            right_relation = random.choice(grammar["spatial"]["right"])
             verb = random.choice(grammar["spatial"]["verb"])
+            before_sen = f"{a} {verb} {left_relation} {b}, when viewed from the front{suffix}."
+            after_sen = f"{b} {verb} {right_relation} {a}, when viewed from the front{suffix}."
 
-        before_sen = f"{a} {verb} {before} {b}{suffix}."
-        after_sen = f"{b} {verb} {after} {a}{suffix}."
         sentences = [before_sen, after_sen]
         return random.choice(sentences)
 
