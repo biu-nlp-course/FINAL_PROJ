@@ -50,5 +50,21 @@
     "with_the_names_of_the people": {
       "prompt": "Please provide all possible arrangements of the order of arrival of {} to a party, given these premises: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{‘solution 1’: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
     }
+  },
+  "SPATIAL_NUMBER_OF_POSSIBLE_ARRANGEMENTS": {
+    "with_the_number_of_the people": {
+      "prompt": "Provide the count of possible arrangements of a group of {} people standing in a row, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explenation."
+    },
+    "with_the_names_of_the people": {
+      "prompt": "Provide the count of possible arrangements of {} standing in a row, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explenation."
+    }
+  },
+  "TEMPORAL_NUMBER_OF_POSSIBLE_ARRANGEMENTS": {
+    "with_the_number_of_the people": {
+      "prompt": "Provide the count of possible arrangements of the order of arrival of {} people to a party, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explenation."
+    },
+    "with_the_names_of_the people": {
+  "prompt": "Provide the count of possible arrangements of the order of arrival of {} to a party, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explenation."
+    }
   }
 }

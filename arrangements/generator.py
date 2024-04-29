@@ -40,6 +40,9 @@ class Generator:
     def get_relation(self, G, a, b):
         return None
 
+    def get_all_possible_arrangements(self, G):
+        return list(nx.all_topological_sorts(G))
+
     def generate_passage(self, G, draw_graph=False):
         names = random.sample(grammar["names"], G.number_of_nodes())
         mapping = {idx: names[idx] for idx in range(G.number_of_nodes())}
@@ -55,4 +58,11 @@ class Generator:
         if draw_graph:
             self.draw_graph(G, mapping)
 
-        return {'premises': premises, 'possible_conclusions': possible_conclusions}
+        possible_arrangements = self.get_all_possible_arrangements(G)
+        named_arrangements = [[mapping[idx] for idx in arrangement] for arrangement in possible_arrangements]
+
+        return {'premises': premises,
+                'possible_conclusions': possible_conclusions,
+                'names': names,
+                'number_of_people': G.number_of_nodes(),
+                'possible_arrangements': named_arrangements}
