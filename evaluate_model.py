@@ -16,6 +16,7 @@ prompt_question_types = list(prompts_dict.keys())
 queries_data = {
     'arrangement_file_source': [],
     'prompt_type': [],
+    'prompt_sub_type': [],
     'arrangement_idx_in_file': [],
     'prompt': [],
     'expected_answer': []
@@ -31,17 +32,17 @@ for arrangements_file in arrangements_files:
                 pass
 
         if prompt_question_type in ["YES-NO PROMPTS"]:
-            arrangements_ids, prompts, expected_answers = (
+            prompts_sub_types, arrangements_ids, prompts, expected_answers = (
                 EntailmentPromptGenerator(arrangements_file, prompt_question_type).
                 get_prompts_and_expected_answers())
         else:
-            # arrangements_ids, prompts, expected_answers = ()
             break
         length = len(prompts)
         arrangement_file_sources = [arrangements_file] * length
         prompt_types = [prompt_question_type] * length
         queries_data['arrangement_file_source'].extend(arrangement_file_sources)
-        queries_data['prompt_type'].extend(prompt_types)  # todo get full type of prompt, with subtype
+        queries_data['prompt_type'].extend(prompt_types)
+        queries_data['prompt_sub_type'].extend(prompts_sub_types)
         queries_data['arrangement_idx_in_file'].extend(arrangements_ids)
         queries_data['prompt'].extend(prompts)
         queries_data['expected_answer'].extend(expected_answers)

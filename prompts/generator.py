@@ -38,7 +38,7 @@ class EntailmentPromptGenerator(PromptGenerator):
                     expected_answers.append(expected_answer)
                     arrangements_internal_nums.append(arrangements_idx)
                     prompts_sub_types.append(prompt_subtype)
-        return arrangements_internal_nums, prompts, expected_answers
+        return prompts_sub_types, arrangements_internal_nums, prompts, expected_answers
 
 
 class OpenQuestionPromptGenerator(PromptGenerator):
