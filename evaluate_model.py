@@ -2,7 +2,7 @@ import json
 import os
 from together import Together
 
-from prompts.generator import EntailmentPromptGenerator
+from prompts.generator import EntailmentPromptGenerator, OpenQuestionPromptGenerator
 
 client = Together(api_key=os.environ.get("TOGETHER_API_KEY"))
 write_queries_to_file = True
@@ -36,7 +36,9 @@ for arrangements_file in arrangements_files:
                 EntailmentPromptGenerator(arrangements_file, prompt_question_type).
                 get_prompts_and_expected_answers())
         else:
-            break
+            prompts_sub_types, arrangements_ids, prompts, expected_answers =\
+                (OpenQuestionPromptGenerator(arrangements_file, prompt_question_type).
+                 get_prompts_and_expected_answers())
         length = len(prompts)
         arrangement_file_sources = [arrangements_file] * length
         prompt_types = [prompt_question_type] * length

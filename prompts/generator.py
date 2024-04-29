@@ -13,6 +13,14 @@ spatial_order_template = "a possible arrangement of the row from left to right i
 
 class PromptGenerator:
     def __init__(self, arrangements_file_path, prompt_question_type):
+        with open(arrangements_file_path, 'r') as json_file:
+            self.arrangements_data = json.load(json_file)
+        self.prompts_templates = list(prompts_json[prompt_question_type].items())
+
+
+class EntailmentPromptGenerator(PromptGenerator):
+    def __init__(self, arrangements_file_path, prompt_question_type):
+        super().__init__(arrangements_file_path, prompt_question_type)
         if 'spatial' in arrangements_file_path:
             self.text_2_template = spatial_conclusion_template
             self.premises_prefix = spatial_prefix_premise
@@ -21,12 +29,7 @@ class PromptGenerator:
             self.text_2_template = temporal_conclusion_template
             self.premises_prefix = temporal_prefix_premise
             self.possible_order_template = temporal_order_template
-        with open(arrangements_file_path, 'r') as json_file:
-            self.arrangements_data = json.load(json_file)
-        self.prompts_templates = list(prompts_json[prompt_question_type].items())
 
-
-class EntailmentPromptGenerator(PromptGenerator):
     def get_prompts_and_expected_answers(self):
         prompts = []
         expected_answers = []
@@ -46,6 +49,7 @@ class EntailmentPromptGenerator(PromptGenerator):
                     expected_answers.append(expected_answer)
                     arrangements_internal_nums.append(arrangements_idx)
                     prompts_sub_types.append("binary_relation_" + prompt_subtype)
+
             possible_arrangements = arrangement['possible_arrangements']
             for possible_arrangement in possible_arrangements:
                 order = ", ".join(possible_arrangement)
@@ -56,11 +60,40 @@ class EntailmentPromptGenerator(PromptGenerator):
                     prompts.append(query)
                     expected_answers.append(expected_answer)
                     arrangements_internal_nums.append(arrangements_idx)
-                    prompts_sub_types.append('possible_arrangements_' + prompt_subtype)
+                    prompts_sub_types.append('possible_arrangement_candidate_' + prompt_subtype)
         return prompts_sub_types, arrangements_internal_nums, prompts, expected_answers
 
 
 class OpenQuestionPromptGenerator(PromptGenerator):
+    def __init__(self, arrangements_file_path, prompt_question_type):
+        super().__init__(arrangements_file_path, prompt_question_type)
+        with open(arrangements_file_path, 'r') as json_file:
+            self.arrangements_data = json.load(json_file)
+        self.prompt_question_type = prompt_question_type
+        self.prompts_templates = list(prompts_json[prompt_question_type].items())
+
     def get_prompts_and_expected_answers(self):
-        #todo build this
-        return None
+        prompts = []
+        expected_answers = []
+        arrangements_internal_nums = []
+        prompts_sub_types = []
+        for arrangements_idx, arrangement in enumerate(self.arrangements_data):
+            premises = arrangement['premises']
+            premises_block = " ".join(premises)
+            for prompt_subtype, prompt_template in self.prompts_templates:
+                possible_arrangements = arrangement["possible_arrangements"]
+                if 'NUMBER' in self.prompt_question_type:
+                    expected_answer = len(possible_arrangements)
+                    prompts_sub_types.append('num_of_all_possible_arrangements_' + prompt_subtype)
+                else:
+                    expected_answer = possible_arrangements
+                    prompts_sub_types.append('all_possible_arrangements_' + prompt_subtype)
+                if 'number' in prompt_subtype:
+                    text_1 = arrangement['number_of_people']
+                else:
+                    text_1 = " ".join(arrangement['names'])
+                query = prompt_template["prompt"].format(text_1, premises_block)
+                prompts.append(query)
+                expected_answers.append(expected_answer)
+                arrangements_internal_nums.append(arrangements_idx)
+        return prompts_sub_types, arrangements_internal_nums, prompts, expected_answers
