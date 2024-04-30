@@ -1,0 +1,101 @@
+[
+  {
+    "premises": [
+      "Bob came earlier than Rina.",
+      "Rina showed up after Emily.",
+      "Moshe entered prior to Emily."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Bob",
+          "Moshe"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
+          "Rina"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Emily",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Moshe"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Moshe"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Emily"
+        ],
+        "FALSE"
+      ]
+    ],
+    "names": [
+      "Bob",
+      "Moshe",
+      "Emily",
+      "Rina"
+    ],
+    "number_of_people": 4,
+    "possible_arrangements": [
+      [
+        "Moshe",
+        "Emily",
+        "Bob",
+        "Rina"
+      ],
+      [
+        "Moshe",
+        "Bob",
+        "Emily",
+        "Rina"
+      ],
+      [
+        "Bob",
+        "Moshe",
+        "Emily",
+        "Rina"
+      ]
+    ]
+  }
+]

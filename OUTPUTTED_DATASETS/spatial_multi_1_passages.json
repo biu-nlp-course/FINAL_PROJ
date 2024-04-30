@@ -1,0 +1,101 @@
+[
+  {
+    "premises": [
+      "Shuli stands to the left of Emily, when viewed from the front.",
+      "Shuli is leftward from Judith, when viewed from the front.",
+      "David is to the right of Emily, when viewed from the front."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "David",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "David"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Judith",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ],
+    "names": [
+      "David",
+      "Shuli",
+      "Judith",
+      "Emily"
+    ],
+    "number_of_people": 4,
+    "possible_arrangements": [
+      [
+        "Shuli",
+        "Judith",
+        "Emily",
+        "David"
+      ],
+      [
+        "Shuli",
+        "Emily",
+        "David",
+        "Judith"
+      ],
+      [
+        "Shuli",
+        "Emily",
+        "Judith",
+        "David"
+      ]
+    ]
+  }
+]
