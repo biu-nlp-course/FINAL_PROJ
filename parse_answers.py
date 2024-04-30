@@ -15,3 +15,5 @@ def sort_possible_arrangements():
 
         with open(arrangements_file, "w") as json_file:
             json.dump(new_arrangements, json_file)
+
+

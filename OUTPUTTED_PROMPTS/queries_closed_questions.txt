@@ -1,0 +1,448 @@
+****************************************************************************************************
+arrange a group of 4 people in a row under to the following constraints: 
+Bob came earlier than Rina. Rina showed up after Emily. Moshe entered prior to Emily.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Bob', 'Moshe', 'Emily', 'Rina'], ['Moshe', 'Bob', 'Emily', 'Rina'], ['Moshe', 'Emily', 'Bob', 'Rina']]
+****************************************************************************************************
+
+****************************************************************************************************
+arrange Bob, Moshe, Emily, Rina in a row under to the following constraints: 
+Bob came earlier than Rina. Rina showed up after Emily. Moshe entered prior to Emily.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Bob', 'Moshe', 'Emily', 'Rina'], ['Moshe', 'Bob', 'Emily', 'Rina'], ['Moshe', 'Emily', 'Bob', 'Rina']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of 4 people to a party, given these premises: 
+Bob came earlier than Rina. Rina showed up after Emily. Moshe entered prior to Emily.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Bob', 'Moshe', 'Emily', 'Rina'], ['Moshe', 'Bob', 'Emily', 'Rina'], ['Moshe', 'Emily', 'Bob', 'Rina']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of Bob, Moshe, Emily, Rina to a party, given these premises: 
+Bob came earlier than Rina. Rina showed up after Emily. Moshe entered prior to Emily.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Bob', 'Moshe', 'Emily', 'Rina'], ['Moshe', 'Bob', 'Emily', 'Rina'], ['Moshe', 'Emily', 'Bob', 'Rina']]
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of a group of 4 people standing in a row, under to the following constraints: 
+Bob came earlier than Rina. Rina showed up after Emily. Moshe entered prior to Emily.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of Bob, Moshe, Emily, Rina standing in a row, under to the following constraints: 
+Bob came earlier than Rina. Rina showed up after Emily. Moshe entered prior to Emily.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of 4 people to a party, according to the following constraints: 
+Bob came earlier than Rina. Rina showed up after Emily. Moshe entered prior to Emily.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of Bob, Moshe, Emily, Rina to a party, according to the following constraints: 
+Bob came earlier than Rina. Rina showed up after Emily. Moshe entered prior to Emily.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+arrange a group of 4 people in a row under to the following constraints: 
+Rina showed up later than Shuli, possibly with others in between. Moshe arrived later than Rina, possibly with others in between. John came after Moshe, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Rina', 'Moshe', 'John']]
+****************************************************************************************************
+
+****************************************************************************************************
+arrange Shuli, Rina, Moshe, John in a row under to the following constraints: 
+Rina showed up later than Shuli, possibly with others in between. Moshe arrived later than Rina, possibly with others in between. John came after Moshe, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Rina', 'Moshe', 'John']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of 4 people to a party, given these premises: 
+Rina showed up later than Shuli, possibly with others in between. Moshe arrived later than Rina, possibly with others in between. John came after Moshe, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Rina', 'Moshe', 'John']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of Shuli, Rina, Moshe, John to a party, given these premises: 
+Rina showed up later than Shuli, possibly with others in between. Moshe arrived later than Rina, possibly with others in between. John came after Moshe, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Rina', 'Moshe', 'John']]
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of a group of 4 people standing in a row, under to the following constraints: 
+Rina showed up later than Shuli, possibly with others in between. Moshe arrived later than Rina, possibly with others in between. John came after Moshe, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of Shuli, Rina, Moshe, John standing in a row, under to the following constraints: 
+Rina showed up later than Shuli, possibly with others in between. Moshe arrived later than Rina, possibly with others in between. John came after Moshe, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of 4 people to a party, according to the following constraints: 
+Rina showed up later than Shuli, possibly with others in between. Moshe arrived later than Rina, possibly with others in between. John came after Moshe, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of Shuli, Rina, Moshe, John to a party, according to the following constraints: 
+Rina showed up later than Shuli, possibly with others in between. Moshe arrived later than Rina, possibly with others in between. John came after Moshe, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+arrange a group of 4 people in a row under to the following constraints: 
+Shuli is leftward from John, when viewed from the front. John stands to the left of David, when viewed from the front. Judith stands on the left side of Shuli, when viewed from the front.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Judith', 'Shuli', 'John', 'David']]
+****************************************************************************************************
+
+****************************************************************************************************
+arrange Judith, Shuli, John, David in a row under to the following constraints: 
+Shuli is leftward from John, when viewed from the front. John stands to the left of David, when viewed from the front. Judith stands on the left side of Shuli, when viewed from the front.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Judith', 'Shuli', 'John', 'David']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of 4 people to a party, given these premises: 
+Shuli is leftward from John, when viewed from the front. John stands to the left of David, when viewed from the front. Judith stands on the left side of Shuli, when viewed from the front.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Judith', 'Shuli', 'John', 'David']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of Judith, Shuli, John, David to a party, given these premises: 
+Shuli is leftward from John, when viewed from the front. John stands to the left of David, when viewed from the front. Judith stands on the left side of Shuli, when viewed from the front.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Judith', 'Shuli', 'John', 'David']]
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of a group of 4 people standing in a row, under to the following constraints: 
+Shuli is leftward from John, when viewed from the front. John stands to the left of David, when viewed from the front. Judith stands on the left side of Shuli, when viewed from the front.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of Judith, Shuli, John, David standing in a row, under to the following constraints: 
+Shuli is leftward from John, when viewed from the front. John stands to the left of David, when viewed from the front. Judith stands on the left side of Shuli, when viewed from the front.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of 4 people to a party, according to the following constraints: 
+Shuli is leftward from John, when viewed from the front. John stands to the left of David, when viewed from the front. Judith stands on the left side of Shuli, when viewed from the front.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of Judith, Shuli, John, David to a party, according to the following constraints: 
+Shuli is leftward from John, when viewed from the front. John stands to the left of David, when viewed from the front. Judith stands on the left side of Shuli, when viewed from the front.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+arrange a group of 4 people in a row under to the following constraints: 
+John entered earlier than Rina. Judith entered after Emily. John showed up after Judith.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Emily', 'Judith', 'John', 'Rina']]
+****************************************************************************************************
+
+****************************************************************************************************
+arrange Emily, Judith, John, Rina in a row under to the following constraints: 
+John entered earlier than Rina. Judith entered after Emily. John showed up after Judith.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Emily', 'Judith', 'John', 'Rina']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of 4 people to a party, given these premises: 
+John entered earlier than Rina. Judith entered after Emily. John showed up after Judith.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Emily', 'Judith', 'John', 'Rina']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of Emily, Judith, John, Rina to a party, given these premises: 
+John entered earlier than Rina. Judith entered after Emily. John showed up after Judith.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Emily', 'Judith', 'John', 'Rina']]
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of a group of 4 people standing in a row, under to the following constraints: 
+John entered earlier than Rina. Judith entered after Emily. John showed up after Judith.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of Emily, Judith, John, Rina standing in a row, under to the following constraints: 
+John entered earlier than Rina. Judith entered after Emily. John showed up after Judith.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of 4 people to a party, according to the following constraints: 
+John entered earlier than Rina. Judith entered after Emily. John showed up after Judith.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of Emily, Judith, John, Rina to a party, according to the following constraints: 
+John entered earlier than Rina. Judith entered after Emily. John showed up after Judith.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+arrange a group of 4 people in a row under to the following constraints: 
+Bob came later than Dylan, possibly with others in between. John came after Dylan, possibly with others in between. John arrived before Shuli, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Dylan', 'Bob', 'John', 'Shuli'], ['Dylan', 'John', 'Bob', 'Shuli'], ['Dylan', 'John', 'Shuli', 'Bob']]
+****************************************************************************************************
+
+****************************************************************************************************
+arrange Shuli, Bob, John, Dylan in a row under to the following constraints: 
+Bob came later than Dylan, possibly with others in between. John came after Dylan, possibly with others in between. John arrived before Shuli, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Dylan', 'Bob', 'John', 'Shuli'], ['Dylan', 'John', 'Bob', 'Shuli'], ['Dylan', 'John', 'Shuli', 'Bob']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of 4 people to a party, given these premises: 
+Bob came later than Dylan, possibly with others in between. John came after Dylan, possibly with others in between. John arrived before Shuli, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Dylan', 'Bob', 'John', 'Shuli'], ['Dylan', 'John', 'Bob', 'Shuli'], ['Dylan', 'John', 'Shuli', 'Bob']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of Shuli, Bob, John, Dylan to a party, given these premises: 
+Bob came later than Dylan, possibly with others in between. John came after Dylan, possibly with others in between. John arrived before Shuli, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Dylan', 'Bob', 'John', 'Shuli'], ['Dylan', 'John', 'Bob', 'Shuli'], ['Dylan', 'John', 'Shuli', 'Bob']]
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of a group of 4 people standing in a row, under to the following constraints: 
+Bob came later than Dylan, possibly with others in between. John came after Dylan, possibly with others in between. John arrived before Shuli, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of Shuli, Bob, John, Dylan standing in a row, under to the following constraints: 
+Bob came later than Dylan, possibly with others in between. John came after Dylan, possibly with others in between. John arrived before Shuli, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of 4 people to a party, according to the following constraints: 
+Bob came later than Dylan, possibly with others in between. John came after Dylan, possibly with others in between. John arrived before Shuli, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of Shuli, Bob, John, Dylan to a party, according to the following constraints: 
+Bob came later than Dylan, possibly with others in between. John came after Dylan, possibly with others in between. John arrived before Shuli, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+arrange a group of 4 people in a row under to the following constraints: 
+Moshe is leftward from Emily, when viewed from the front, possibly with others in between. Moshe is to the right of Shuli, when viewed from the front, possibly with others in between. Emily is leftward from Bob, when viewed from the front, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Moshe', 'Emily', 'Bob']]
+****************************************************************************************************
+
+****************************************************************************************************
+arrange Shuli, Moshe, Emily, Bob in a row under to the following constraints: 
+Moshe is leftward from Emily, when viewed from the front, possibly with others in between. Moshe is to the right of Shuli, when viewed from the front, possibly with others in between. Emily is leftward from Bob, when viewed from the front, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Moshe', 'Emily', 'Bob']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of 4 people to a party, given these premises: 
+Moshe is leftward from Emily, when viewed from the front, possibly with others in between. Moshe is to the right of Shuli, when viewed from the front, possibly with others in between. Emily is leftward from Bob, when viewed from the front, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Moshe', 'Emily', 'Bob']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of Shuli, Moshe, Emily, Bob to a party, given these premises: 
+Moshe is leftward from Emily, when viewed from the front, possibly with others in between. Moshe is to the right of Shuli, when viewed from the front, possibly with others in between. Emily is leftward from Bob, when viewed from the front, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Moshe', 'Emily', 'Bob']]
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of a group of 4 people standing in a row, under to the following constraints: 
+Moshe is leftward from Emily, when viewed from the front, possibly with others in between. Moshe is to the right of Shuli, when viewed from the front, possibly with others in between. Emily is leftward from Bob, when viewed from the front, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of Shuli, Moshe, Emily, Bob standing in a row, under to the following constraints: 
+Moshe is leftward from Emily, when viewed from the front, possibly with others in between. Moshe is to the right of Shuli, when viewed from the front, possibly with others in between. Emily is leftward from Bob, when viewed from the front, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of 4 people to a party, according to the following constraints: 
+Moshe is leftward from Emily, when viewed from the front, possibly with others in between. Moshe is to the right of Shuli, when viewed from the front, possibly with others in between. Emily is leftward from Bob, when viewed from the front, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of Shuli, Moshe, Emily, Bob to a party, according to the following constraints: 
+Moshe is leftward from Emily, when viewed from the front, possibly with others in between. Moshe is to the right of Shuli, when viewed from the front, possibly with others in between. Emily is leftward from Bob, when viewed from the front, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 1
+****************************************************************************************************
+
+****************************************************************************************************
+arrange a group of 4 people in a row under to the following constraints: 
+Shuli stands to the left of Emily, when viewed from the front. Shuli is leftward from Judith, when viewed from the front. David is to the right of Emily, when viewed from the front.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Emily', 'David', 'Judith'], ['Shuli', 'Emily', 'Judith', 'David'], ['Shuli', 'Judith', 'Emily', 'David']]
+****************************************************************************************************
+
+****************************************************************************************************
+arrange David, Shuli, Judith, Emily in a row under to the following constraints: 
+Shuli stands to the left of Emily, when viewed from the front. Shuli is leftward from Judith, when viewed from the front. David is to the right of Emily, when viewed from the front.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Emily', 'David', 'Judith'], ['Shuli', 'Emily', 'Judith', 'David'], ['Shuli', 'Judith', 'Emily', 'David']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of 4 people to a party, given these premises: 
+Shuli stands to the left of Emily, when viewed from the front. Shuli is leftward from Judith, when viewed from the front. David is to the right of Emily, when viewed from the front.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Emily', 'David', 'Judith'], ['Shuli', 'Emily', 'Judith', 'David'], ['Shuli', 'Judith', 'Emily', 'David']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of David, Shuli, Judith, Emily to a party, given these premises: 
+Shuli stands to the left of Emily, when viewed from the front. Shuli is leftward from Judith, when viewed from the front. David is to the right of Emily, when viewed from the front.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Shuli', 'Emily', 'David', 'Judith'], ['Shuli', 'Emily', 'Judith', 'David'], ['Shuli', 'Judith', 'Emily', 'David']]
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of a group of 4 people standing in a row, under to the following constraints: 
+Shuli stands to the left of Emily, when viewed from the front. Shuli is leftward from Judith, when viewed from the front. David is to the right of Emily, when viewed from the front.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of David, Shuli, Judith, Emily standing in a row, under to the following constraints: 
+Shuli stands to the left of Emily, when viewed from the front. Shuli is leftward from Judith, when viewed from the front. David is to the right of Emily, when viewed from the front.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of 4 people to a party, according to the following constraints: 
+Shuli stands to the left of Emily, when viewed from the front. Shuli is leftward from Judith, when viewed from the front. David is to the right of Emily, when viewed from the front.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of David, Shuli, Judith, Emily to a party, according to the following constraints: 
+Shuli stands to the left of Emily, when viewed from the front. Shuli is leftward from Judith, when viewed from the front. David is to the right of Emily, when viewed from the front.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 3
+****************************************************************************************************
+
+****************************************************************************************************
+arrange a group of 4 people in a row under to the following constraints: 
+Bob stands to the left of Judith, when viewed from the front, possibly with others in between. Moshe is positioned to the left of Dylan, when viewed from the front, possibly with others in between. Bob stands leftward from Dylan, when viewed from the front, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Bob', 'Judith', 'Moshe', 'Dylan'], ['Bob', 'Moshe', 'Dylan', 'Judith'], ['Bob', 'Moshe', 'Judith', 'Dylan'], ['Moshe', 'Bob', 'Dylan', 'Judith'], ['Moshe', 'Bob', 'Judith', 'Dylan']]
+****************************************************************************************************
+
+****************************************************************************************************
+arrange Dylan, Moshe, Bob, Judith in a row under to the following constraints: 
+Bob stands to the left of Judith, when viewed from the front, possibly with others in between. Moshe is positioned to the left of Dylan, when viewed from the front, possibly with others in between. Bob stands leftward from Dylan, when viewed from the front, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Bob', 'Judith', 'Moshe', 'Dylan'], ['Bob', 'Moshe', 'Dylan', 'Judith'], ['Bob', 'Moshe', 'Judith', 'Dylan'], ['Moshe', 'Bob', 'Dylan', 'Judith'], ['Moshe', 'Bob', 'Judith', 'Dylan']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of 4 people to a party, given these premises: 
+Bob stands to the left of Judith, when viewed from the front, possibly with others in between. Moshe is positioned to the left of Dylan, when viewed from the front, possibly with others in between. Bob stands leftward from Dylan, when viewed from the front, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Bob', 'Judith', 'Moshe', 'Dylan'], ['Bob', 'Moshe', 'Dylan', 'Judith'], ['Bob', 'Moshe', 'Judith', 'Dylan'], ['Moshe', 'Bob', 'Dylan', 'Judith'], ['Moshe', 'Bob', 'Judith', 'Dylan']]
+****************************************************************************************************
+
+****************************************************************************************************
+provide all possible arrangements of the order of arrival of Dylan, Moshe, Bob, Judith to a party, given these premises: 
+Bob stands to the left of Judith, when viewed from the front, possibly with others in between. Moshe is positioned to the left of Dylan, when viewed from the front, possibly with others in between. Bob stands leftward from Dylan, when viewed from the front, possibly with others in between.
+I need all legal arrangements under the stated constraints. provide the response in the format of [Answer: your answer]. present your solutions in as a list of lists format like [['person_name','person_name','person_name'],['person_name','person_name','person_name']] and so on.------------------------------
+Expected answer: [['Bob', 'Judith', 'Moshe', 'Dylan'], ['Bob', 'Moshe', 'Dylan', 'Judith'], ['Bob', 'Moshe', 'Judith', 'Dylan'], ['Moshe', 'Bob', 'Dylan', 'Judith'], ['Moshe', 'Bob', 'Judith', 'Dylan']]
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of a group of 4 people standing in a row, under to the following constraints: 
+Bob stands to the left of Judith, when viewed from the front, possibly with others in between. Moshe is positioned to the left of Dylan, when viewed from the front, possibly with others in between. Bob stands leftward from Dylan, when viewed from the front, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 5
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of Dylan, Moshe, Bob, Judith standing in a row, under to the following constraints: 
+Bob stands to the left of Judith, when viewed from the front, possibly with others in between. Moshe is positioned to the left of Dylan, when viewed from the front, possibly with others in between. Bob stands leftward from Dylan, when viewed from the front, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 5
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of 4 people to a party, according to the following constraints: 
+Bob stands to the left of Judith, when viewed from the front, possibly with others in between. Moshe is positioned to the left of Dylan, when viewed from the front, possibly with others in between. Bob stands leftward from Dylan, when viewed from the front, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 5
+****************************************************************************************************
+
+****************************************************************************************************
+Provide the count of legal arrangements of the order of arrival of Dylan, Moshe, Bob, Judith to a party, according to the following constraints: 
+Bob stands to the left of Judith, when viewed from the front, possibly with others in between. Moshe is positioned to the left of Dylan, when viewed from the front, possibly with others in between. Bob stands leftward from Dylan, when viewed from the front, possibly with others in between.
+your reply should be a single number exactly, without any prefix or explanation.------------------------------
+Expected answer: 5
+****************************************************************************************************
+
