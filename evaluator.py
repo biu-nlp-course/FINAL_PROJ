@@ -3,7 +3,10 @@ import json
 import re
 
 with open('./results_from_models/gemma_7b_results_closed_questiones.json') as f:
-    closed_questions = json.load(f)
+    model_output = json.load(f)
+
+with open('OUTPUTTED_PROMPTS/queries_closed_questiones.json') as g:
+    closed_gold = json.load(g)["expected_answer"]
 
 def evaluate(Y, Y_H, arrangement_prompts=False):
     predictions = [evaluate_prompt(y, y_hat) for y, y_hat in zip(Y, Y_H)]
@@ -47,7 +50,7 @@ def plot_results(results, title='Performance on Different Setups'):
     plt.show()
 
 
-def extract_closed_questions_answers(q_results):
+def extract_closed_questions_predictions(q_results):
     """
     Extracts answers from a list of questions results.
 
@@ -86,10 +89,16 @@ def extract_closed_questions_answers(q_results):
 
 
 if __name__ == '__main__':
-    closed_questions = closed_questions["model_full_answers"]
-    answers = extract_closed_questions_answers(closed_questions)
-    for i, answer in enumerate(answers, 1):
+    model_output = model_output["model_full_answers"]
+    predictions = extract_closed_questions_predictions(model_output)
+    for i, answer in enumerate(predictions, 1):
         if answer not in ['yes', 'no', 'neutral', 'true', 'false', 'entail', 'not entail']:
-            print("ERROR")
             raise ValueError(f"No answer found for question {i}")
-    print(answers)
+
+    # print(closed_gold)
+    # print(list(set(answers)))
+    # unique_strings = list(set(closed_gold))
+    # print(unique_strings)
+
+    print(evaluate(closed_gold, predictions, arrangement_prompts=False))
+
