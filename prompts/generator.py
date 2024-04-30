@@ -13,12 +13,13 @@ spatial_order_template = "a possible arrangement of the row from left to right i
 
 class PromptGenerator:
     def __init__(self, arrangements_file_path, prompt_question_type):
+        self.prompt_question_type = prompt_question_type
         with open(arrangements_file_path, 'r') as json_file:
             self.arrangements_data = json.load(json_file)
         self.prompts_templates = list(prompts_json[prompt_question_type].items())
 
 
-class EntailmentPromptGenerator(PromptGenerator):
+class ClosedQuestionsPromptGenerator(PromptGenerator):
     def __init__(self, arrangements_file_path, prompt_question_type):
         super().__init__(arrangements_file_path, prompt_question_type)
         if 'spatial' in arrangements_file_path:
@@ -65,12 +66,6 @@ class EntailmentPromptGenerator(PromptGenerator):
 
 
 class OpenQuestionPromptGenerator(PromptGenerator):
-    def __init__(self, arrangements_file_path, prompt_question_type):
-        super().__init__(arrangements_file_path, prompt_question_type)
-        with open(arrangements_file_path, 'r') as json_file:
-            self.arrangements_data = json.load(json_file)
-        self.prompt_question_type = prompt_question_type
-        self.prompts_templates = list(prompts_json[prompt_question_type].items())
 
     def get_prompts_and_expected_answers(self):
         prompts = []

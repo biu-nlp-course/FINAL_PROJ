@@ -2,7 +2,7 @@ import json
 import os
 from together import Together
 
-from prompts.generator import EntailmentPromptGenerator, OpenQuestionPromptGenerator
+from prompts.generator import ClosedQuestionsPromptGenerator, OpenQuestionPromptGenerator
 
 client = Together(api_key=os.environ.get("TOGETHER_API_KEY"))
 write_queries_to_file = True
@@ -31,9 +31,9 @@ for arrangements_file in arrangements_files:
             if 'temporal' in arrangements_file:
                 pass
 
-        if prompt_question_type in ["YES-NO PROMPTS"]:
+        if prompt_question_type in ["YES_NO_PROMPTS"]:
             prompts_sub_types, arrangements_ids, prompts, expected_answers = (
-                EntailmentPromptGenerator(arrangements_file, prompt_question_type).
+                ClosedQuestionsPromptGenerator(arrangements_file, prompt_question_type).
                 get_prompts_and_expected_answers())
         else:
             prompts_sub_types, arrangements_ids, prompts, expected_answers =\

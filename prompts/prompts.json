@@ -1,5 +1,5 @@
 {
-  "YES-NO PROMPTS": {
+  "YES_NO_PROMPTS": {
     "text1_text2_neutral": {
       "prompt": "You are given a pair of texts.\nSay about this pair: given Text 1, is Text 2 true, false or neutral (you can’t tell if it’s true or false)?\nyour reply should be exact “true”, “false”, “neutral” (single word, without prefix).\n\nText 1: {}\nText 2: {}\n",
       "mapping": {
