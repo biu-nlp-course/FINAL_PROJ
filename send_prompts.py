@@ -8,7 +8,7 @@ client = Together(api_key=os.environ.get("TOGETHER_API_KEY"))
 write_queries_to_file = True
 write_answers_to_file = True
 
-arrangements_files = ['OUTPUTTED_SCENARIOS/' + file_name for file_name in os.listdir("OUTPUTTED_SCENARIOS")]
+arrangements_files = ['OUTPUTTED_ARRANGEMENTS/' + file_name for file_name in os.listdir("OUTPUTTED_ARRANGEMENTS")]
 
 with open('prompts/prompts.json', 'r') as prompts_file:
     prompts_dict = json.load(prompts_file)

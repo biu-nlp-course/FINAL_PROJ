@@ -9,7 +9,7 @@ def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True
     else:
         generator = SingleChoiceGenerator(disambiguate=disambiguate, temporal_reasoning=temporal_reasoning)
 
-    output_file = f"OUTPUTTED_SCENARIOS/"
+    output_file = f"OUTPUTTED_ARRANGEMENTS/"
     output_file += "temporal_" if temporal_reasoning else "spatial_"
     output_file += "multi" if multi else "single"
     output_file += "_disambiguate" if disambiguate else ""
