@@ -4,7 +4,7 @@ import json
 import random
 
 # Read JSON data from a file
-with open('grammar.json', 'r') as file:
+with open('arrangements/grammar.json', 'r') as file:
     grammar = json.load(file)
 
 
