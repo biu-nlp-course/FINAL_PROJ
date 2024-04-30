@@ -70,9 +70,10 @@ if write_queries_to_file:
 
 model_answers = []
 i = 1
+model = "google/gemma-7b-it"
 for prompt, expected_answer, prompt_sub_type in zip(prompts, expected_answers, prompt_sub_type):
     response = client.chat.completions.create(
-        model="google/gemma-7b-it",
+        model=model,
         messages=[{"role": "user", "content": prompt}],
     )
     answer = response.choices[0].message.content
@@ -84,5 +85,6 @@ for prompt, expected_answer, prompt_sub_type in zip(prompts, expected_answers, p
     }
 
     if write_answers_to_file:
-        with open("./results_from_models/results.json", 'w') as json_file:
+        file_name = './results_from_models/gemma_7b_results_open_questions.json'
+        with open(file_name, 'w') as json_file:
             json.dump(results, json_file)

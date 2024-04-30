@@ -80,12 +80,6 @@
     "possible_arrangements": [
       [
         "Shuli",
-        "Judith",
-        "Emily",
-        "David"
-      ],
-      [
-        "Shuli",
         "Emily",
         "David",
         "Judith"
@@ -94,6 +88,12 @@
         "Shuli",
         "Emily",
         "Judith",
+        "David"
+      ],
+      [
+        "Shuli",
+        "Judith",
+        "Emily",
         "David"
       ]
     ]
