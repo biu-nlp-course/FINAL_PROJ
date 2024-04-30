@@ -14,6 +14,7 @@ class SingleChoiceGenerator(Generator):
         else:
             return "FALSE"
 
+
 # N = 4   #  number of vertices
 # generator = SingleChoiceGenerator(disambiguate=True, temporal_reasoning=True)
 # directed_path_graph = generator.create_directed_path_graph(N)

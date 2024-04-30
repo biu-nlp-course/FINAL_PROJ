@@ -37,3 +37,4 @@ class MultiChoiceGenerator(Generator):
             return "FALSE"
         else:
             return "UNABLE_TO_DETERMINE"
+
