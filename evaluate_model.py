@@ -55,20 +55,20 @@ if write_queries_to_file:
 
 prompts = queries_data['prompt']
 expected_answers = queries_data['expected_answer']
-experiment_data = zip(prompts, expected_answers)
 
 if write_queries_to_file:
     with open("./queries.txt", "w") as f:
-        for prompt, expected_answer in experiment_data:
+        for prompt, expected_answer in zip(prompts, expected_answers):
             f.write(f"{'*' * 100}\n{prompt}{'-' * 30}\nExpected answer: {expected_answer}\n{'*' * 100}\n\n")
 
 model_answers = []
-for prompt, expected_answer in experiment_data:
+for prompt, expected_answer in zip(prompts, expected_answers):
     response = client.chat.completions.create(
         model="google/gemma-2b-it",
         messages=[{"role": "user", "content": prompt}],
     )
     answer = response.choices[0].message.content
-    print(answer)
+    print(f"prompt: {prompt}\n expected Answer: {expected_answer}\n answer from model {answer}")
     model_answers.append(answer)
-    break
+
+i = 1

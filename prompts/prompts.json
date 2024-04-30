@@ -1,7 +1,7 @@
 {
   "YES-NO PROMPTS": {
     "text1_text2_neutral": {
-      "prompt": "You are given a pair of texts.\nSay about this pair: given Text 1, is Text 2 true, false or neutral (you can’t tell if it’s true or false)?\nReply in one word.\n\nText 1: {}\nText 2: {}\n",
+      "prompt": "You are given a pair of texts.\nSay about this pair: given Text 1, is Text 2 true, false or neutral (you can’t tell if it’s true or false)?\nyour reply should be exact “true”, “false”, “neutral” (single word, without prefix).\n\nText 1: {}\nText 2: {}\n",
       "mapping": {
         "TRUE": "true",
         "FALSE": "false",
@@ -37,34 +37,34 @@
   },
   "SPATIAL_POSSIBLE_ARRANGEMENTS": {
     "with_the_number_of_the people": {
-      "prompt": "Please arrange a group of {} people in a row according to the following constraints: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{solution_1: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
+      "prompt": "Please arrange a group of {} people in a row according to the following constraints: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{{'solution_1': [person_name,person_name,person_name]}}] and so on. return only the result json, without any prefix or explanation."
     },
     "with_the_names_of_the people": {
-      "prompt": "Please arrange a {} in a row according to the following constraints: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{solution_1: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
+      "prompt": "Please arrange {} in a row according to the following constraints: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{{'solution_1': [person_name,person_name,person_name]}}]] and so on. return only the result json, without any prefix or explanation."
     }
   },
   "TEMPORAL_POSSIBLE_ARRANGEMENTS": {
     "with_the_number_of_the people": {
-      "prompt": "Please provide all possible arrangements of the order of arrival of {} people to a party, given these premises: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{solution_1: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
+      "prompt": "Please provide all possible arrangements of the order of arrival of {} people to a party, given these premises: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{{'solution_1': [person_name,person_name,person_name]}}] and so on. return only the result json, without any prefix or explanation."
     },
     "with_the_names_of_the people": {
-      "prompt": "Please provide all possible arrangements of the order of arrival of {} to a party, given these premises: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{solution_1: [person_name,person_name,person_name]}] and so on. return only the result json, without any prefix."
+      "prompt": "Please provide all possible arrangements of the order of arrival of {} to a party, given these premises: \n{}\n\nI need all possible arrangements, present your solutions in JSON format like [{{'solution_1': [person_name,person_name,person_name]}}] and so on. return only the result json, without any prefix or explanation."
     }
   },
   "SPATIAL_NUMBER_OF_POSSIBLE_ARRANGEMENTS": {
     "with_the_number_of_the people": {
-      "prompt": "Provide the count of possible arrangements of a group of {} people standing in a row, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explenation."
+      "prompt": "Provide the count of possible arrangements of a group of {} people standing in a row, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explanation."
     },
     "with_the_names_of_the people": {
-      "prompt": "Provide the count of possible arrangements of {} standing in a row, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explenation."
+      "prompt": "Provide the count of possible arrangements of {} standing in a row, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explanation."
     }
   },
   "TEMPORAL_NUMBER_OF_POSSIBLE_ARRANGEMENTS": {
     "with_the_number_of_the people": {
-      "prompt": "Provide the count of possible arrangements of the order of arrival of {} people to a party, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explenation."
+      "prompt": "Provide the count of possible arrangements of the order of arrival of {} people to a party, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explanation."
     },
     "with_the_names_of_the people": {
-  "prompt": "Provide the count of possible arrangements of the order of arrival of {} to a party, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explenation."
+  "prompt": "Provide the count of possible arrangements of the order of arrival of {} to a party, according to the following constraints: \n{}\n\nyour reply should be a single number exactly, without any prefix or explanation."
     }
   }
 }

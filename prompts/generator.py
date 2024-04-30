@@ -6,7 +6,7 @@ with open('prompts/prompts.json', 'r') as prompts_json_file:
 spatial_prefix_premise = "a few people are standing in a row. "
 temporal_prefix_premise = "a few people arrived to a party. "
 spatial_conclusion_template = "{} is to the left of {}"
-temporal_conclusion_template = "{} arrived to party before {}"
+temporal_conclusion_template = "{} arrived to the party before {}"
 temporal_order_template = "a possible order of arrival to is {}. one after the other."
 spatial_order_template = "a possible arrangement of the row from left to right is {}."
 
@@ -91,7 +91,7 @@ class OpenQuestionPromptGenerator(PromptGenerator):
                 if 'number' in prompt_subtype:
                     text_1 = arrangement['number_of_people']
                 else:
-                    text_1 = " ".join(arrangement['names'])
+                    text_1 = ", ".join(arrangement['names'])
                 query = prompt_template["prompt"].format(text_1, premises_block)
                 prompts.append(query)
                 expected_answers.append(expected_answer)

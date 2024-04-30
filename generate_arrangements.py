@@ -28,7 +28,7 @@ def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True
 
 
 if __name__ == '__main__':
-    k = 2
+    k = 1
     for multi in [False, True]:
         for temporal_reasoning in [False, True]:
             for disambiguate in [False, True]:
