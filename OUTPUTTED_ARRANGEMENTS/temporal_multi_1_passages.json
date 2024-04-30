@@ -79,9 +79,9 @@
     "number_of_people": 4,
     "possible_arrangements": [
       [
+        "Bob",
         "Moshe",
         "Emily",
-        "Bob",
         "Rina"
       ],
       [
@@ -91,9 +91,9 @@
         "Rina"
       ],
       [
-        "Bob",
         "Moshe",
         "Emily",
+        "Bob",
         "Rina"
       ]
     ]
