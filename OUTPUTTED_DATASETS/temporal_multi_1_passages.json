@@ -1,0 +1,113 @@
+[
+  {
+    "premises": [
+      "John arrived later than Rina.",
+      "Emily came later than Rina.",
+      "Bob entered prior to Emily."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "John",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "John",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "Rina"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Bob",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Rina"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "John"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Bob"
+        ],
+        "FALSE"
+      ]
+    ],
+    "names": [
+      "Rina",
+      "John",
+      "Bob",
+      "Emily"
+    ],
+    "number_of_people": 4,
+    "possible_arrangements": [
+      [
+        "Bob",
+        "Rina",
+        "Emily",
+        "John"
+      ],
+      [
+        "Bob",
+        "Rina",
+        "John",
+        "Emily"
+      ],
+      [
+        "Rina",
+        "John",
+        "Bob",
+        "Emily"
+      ],
+      [
+        "Rina",
+        "Bob",
+        "Emily",
+        "John"
+      ],
+      [
+        "Rina",
+        "Bob",
+        "John",
+        "Emily"
+      ]
+    ]
+  }
+]
