@@ -10,11 +10,11 @@ with open('OUTPUTTED_PROMPTS/queries_closed_questiones.json') as g:
     closed_gold = queries_json["expected_answer"]
     setups = queries_json["prompt_sub_type"]
 def evaluate(Y, Y_H, arrangement_prompts=False):
-    predictions = [evaluate_prompt(y, y_hat) for y, y_hat in zip(Y, Y_H)]
+    evaluations = [evaluate_prompt(y, y_hat) for y, y_hat in zip(Y, Y_H)]
     print(f'predictions')
     print()
-    accuracy = sum(predictions) / len(predictions)
-    return predictions, accuracy
+    accuracy = sum(evaluations) / len(evaluations)
+    return evaluations, accuracy
 
 def evaluate_prompt(y, y_hat, arrangement_prompt=False):
     if arrangement_prompt:
@@ -102,9 +102,10 @@ if __name__ == '__main__':
     # unique_strings = list(set(closed_gold))
     # print(unique_strings)
     evaluation_data = dict()
-    predictions, accuracy = evaluate(closed_gold, predictions, arrangement_prompts=False)
+    succeeded, accuracy = evaluate(closed_gold, predictions, arrangement_prompts=False)
     evaluation_data["predictions"] = predictions
     evaluation_data["expected"] = closed_gold
+    evaluation_data["success"] = succeeded
     evaluation_data["setup"] = setups
 
     with open("results_from_models/evaluation_data/closed_evaluation_data.json", 'w') as json_file:
