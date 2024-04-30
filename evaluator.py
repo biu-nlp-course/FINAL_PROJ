@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import json
 import re
 
-with open('./gemma_7b_results_closed_questiones.json') as f:
+with open('./results_from_models/gemma_7b_results_closed_questiones.json') as f:
     closed_questions = json.load(f)
 
 def evaluate(Y, Y_H, arrangement_prompts=False):
@@ -90,5 +90,6 @@ if __name__ == '__main__':
     answers = extract_closed_questions_answers(closed_questions)
     for i, answer in enumerate(answers, 1):
         if answer not in ['yes', 'no', 'neutral', 'true', 'false', 'entail', 'not entail']:
+            print("ERROR")
             raise ValueError(f"No answer found for question {i}")
     print(answers)
