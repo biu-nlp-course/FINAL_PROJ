@@ -1,11 +1,13 @@
 import json
 import os
+
 from together import Together
 
 from prompts.generator import ClosedQuestionsPromptGenerator, OpenQuestionPromptGenerator
 
 client = Together(api_key=os.environ.get("TOGETHER_API_KEY"))
 write_queries_to_file = True
+write_answers_to_file = True
 
 arrangements_files = ['OUTPUTTED_DATASETS/' + file_name for file_name in os.listdir("OUTPUTTED_DATASETS")]
 
@@ -36,7 +38,8 @@ for arrangements_file in arrangements_files:
                 ClosedQuestionsPromptGenerator(arrangements_file, prompt_question_type).
                 get_prompts_and_expected_answers())
         else:
-            prompts_sub_types, arrangements_ids, prompts, expected_answers =\
+            continue
+            prompts_sub_types, arrangements_ids, prompts, expected_answers = \
                 (OpenQuestionPromptGenerator(arrangements_file, prompt_question_type).
                  get_prompts_and_expected_answers())
         length = len(prompts)
@@ -55,6 +58,8 @@ if write_queries_to_file:
 
 prompts = queries_data['prompt']
 expected_answers = queries_data['expected_answer']
+prompt_sub_type = queries_data['prompt_sub_type']
+prompt_type = queries_data['prompt_type']
 
 if write_queries_to_file:
     with open("./queries.txt", "w") as f:
@@ -62,13 +67,20 @@ if write_queries_to_file:
             f.write(f"{'*' * 100}\n{prompt}{'-' * 30}\nExpected answer: {expected_answer}\n{'*' * 100}\n\n")
 
 model_answers = []
-for prompt, expected_answer in zip(prompts, expected_answers):
+i = 1
+for prompt, expected_answer, prompt_sub_type in zip(prompts, expected_answers, prompt_sub_type):
     response = client.chat.completions.create(
-        model="google/gemma-2b-it",
+        model="google/gemma-7b-it",
         messages=[{"role": "user", "content": prompt}],
     )
     answer = response.choices[0].message.content
-    print(f"prompt: {prompt}\n expected Answer: {expected_answer}\n answer from model {answer}")
+    print(f"{i}\nprompt: {prompt}\nexpected Answer: {expected_answer}\nanswer from model: {answer}")
+    i = i + 1
     model_answers.append(answer)
+    results = {
+        'model_full_answers': model_answers,
+    }
 
-i = 1
+    if write_answers_to_file:
+        with open("./results.json", 'w') as json_file:
+            json.dump(results, json_file)

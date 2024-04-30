@@ -1,1 +1,101 @@
-[{"premises": ["Moshe is on the right side of Emily, when viewed from the front.", "Bob stands on the right side of Rina, when viewed from the front.", "Rina is to the left of Moshe, when viewed from the front."], "possible_conclusions": [[["Bob", "Emily"], "UNABLE_TO_DETERMINE"], [["Bob", "Rina"], "FALSE"], [["Bob", "Moshe"], "UNABLE_TO_DETERMINE"], [["Emily", "Bob"], "UNABLE_TO_DETERMINE"], [["Emily", "Rina"], "UNABLE_TO_DETERMINE"], [["Rina", "Emily"], "UNABLE_TO_DETERMINE"], [["Moshe", "Bob"], "UNABLE_TO_DETERMINE"], [["Moshe", "Emily"], "FALSE"], [["Moshe", "Rina"], "FALSE"]], "names": ["Bob", "Emily", "Rina", "Moshe"], "number_of_people": 4, "possible_arrangements": [["Rina", "Bob", "Emily", "Moshe"], ["Rina", "Emily", "Moshe", "Bob"], ["Rina", "Emily", "Bob", "Moshe"], ["Emily", "Rina", "Moshe", "Bob"], ["Emily", "Rina", "Bob", "Moshe"]]}]
+[
+  {
+    "premises": [
+      "Shuli stands to the left of Emily, when viewed from the front.",
+      "Shuli is leftward from Judith, when viewed from the front.",
+      "David is to the right of Emily, when viewed from the front."
+    ],
+    "possible_conclusions": [
+      [
+        [
+          "David",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "David",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "David",
+          "Emily"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Shuli",
+          "David"
+        ],
+        "TRUE"
+      ],
+      [
+        [
+          "Judith",
+          "David"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Judith",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Judith",
+          "Emily"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Shuli"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Emily",
+          "Judith"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ]
+    ],
+    "names": [
+      "David",
+      "Shuli",
+      "Judith",
+      "Emily"
+    ],
+    "number_of_people": 4,
+    "possible_arrangements": [
+      [
+        "Shuli",
+        "Judith",
+        "Emily",
+        "David"
+      ],
+      [
+        "Shuli",
+        "Emily",
+        "David",
+        "Judith"
+      ],
+      [
+        "Shuli",
+        "Emily",
+        "Judith",
+        "David"
+      ]
+    ]
+  }
+]

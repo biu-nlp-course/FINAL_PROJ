@@ -1,112 +1,100 @@
 [
   {
     "premises": [
-      "John arrived later than Rina.",
-      "Emily came later than Rina.",
-      "Bob entered prior to Emily."
+      "Bob came earlier than Rina.",
+      "Rina showed up after Emily.",
+      "Moshe entered prior to Emily."
     ],
     "possible_conclusions": [
       [
         [
-          "Rina",
-          "Bob"
+          "Bob",
+          "Moshe"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          "John",
-          "Rina"
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          "John",
-          "Bob"
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          "John",
+          "Bob",
           "Emily"
         ],
         "UNABLE_TO_DETERMINE"
       ],
       [
         [
-          "Bob",
+          "Moshe",
+          "Bob"
+        ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Moshe",
           "Rina"
         ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          "Bob",
-          "John"
-        ],
-        "UNABLE_TO_DETERMINE"
-      ],
-      [
-        [
-          "Emily",
-          "Rina"
-        ],
-        "FALSE"
-      ],
-      [
-        [
-          "Emily",
-          "John"
-        ],
-        "UNABLE_TO_DETERMINE"
+        "TRUE"
       ],
       [
         [
           "Emily",
           "Bob"
         ],
+        "UNABLE_TO_DETERMINE"
+      ],
+      [
+        [
+          "Emily",
+          "Moshe"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Bob"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Moshe"
+        ],
+        "FALSE"
+      ],
+      [
+        [
+          "Rina",
+          "Emily"
+        ],
         "FALSE"
       ]
     ],
     "names": [
-      "Rina",
-      "John",
       "Bob",
-      "Emily"
+      "Moshe",
+      "Emily",
+      "Rina"
     ],
     "number_of_people": 4,
     "possible_arrangements": [
       [
-        "Bob",
-        "Rina",
+        "Moshe",
         "Emily",
-        "John"
-      ],
-      [
         "Bob",
-        "Rina",
-        "John",
-        "Emily"
+        "Rina"
       ],
       [
-        "Rina",
-        "John",
-        "Bob",
-        "Emily"
-      ],
-      [
-        "Rina",
+        "Moshe",
         "Bob",
         "Emily",
-        "John"
+        "Rina"
       ],
       [
-        "Rina",
         "Bob",
-        "John",
-        "Emily"
+        "Moshe",
+        "Emily",
+        "Rina"
       ]
     ]
   }

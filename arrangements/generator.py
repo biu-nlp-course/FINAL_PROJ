@@ -59,7 +59,7 @@ class Generator:
             self.draw_graph(G, mapping)
 
         possible_arrangements = self.get_all_possible_arrangements(G)
-        named_arrangements = [[mapping[idx] for idx in arrangement] for arrangement in possible_arrangements]
+        named_arrangements = sorted([[mapping[idx] for idx in arrangement] for arrangement in possible_arrangements])
 
         return {'premises': premises,
                 'possible_conclusions': possible_conclusions,
