@@ -51,17 +51,17 @@ class ClosedQuestionsPromptGenerator(PromptGenerator):
                     arrangements_internal_nums.append(arrangements_idx)
                     prompts_sub_types.append("binary_relation_" + prompt_subtype)
 
-            possible_arrangements = arrangement['possible_arrangements']
-            for possible_arrangement in possible_arrangements:
-                order = ", ".join(possible_arrangement)
-                text_2 = self.possible_order_template.format(order)
-                for prompt_subtype, prompt_template in self.prompts_templates:
-                    query = prompt_template["prompt"].format(text_1, text_2)
-                    expected_answer = prompt_template["mapping"]["TRUE"]
-                    prompts.append(query)
-                    expected_answers.append(expected_answer)
-                    arrangements_internal_nums.append(arrangements_idx)
-                    prompts_sub_types.append('possible_arrangement_candidate_' + prompt_subtype)
+            # possible_arrangements = arrangement['possible_arrangements']
+            # for possible_arrangement in possible_arrangements:
+            #     order = ", ".join(possible_arrangement)
+            #     text_2 = self.possible_order_template.format(order)
+            #     for prompt_subtype, prompt_template in self.prompts_templates:
+            #         query = prompt_template["prompt"].format(text_1, text_2)
+            #         expected_answer = prompt_template["mapping"]["TRUE"]
+            #         prompts.append(query)
+            #         expected_answers.append(expected_answer)
+            #         arrangements_internal_nums.append(arrangements_idx)
+            #         prompts_sub_types.append('possible_arrangement_candidate_' + prompt_subtype)
         return prompts_sub_types, arrangements_internal_nums, prompts, expected_answers
 
 
