@@ -48,7 +48,7 @@ def parse_answers_if_possible():
 
 
 def iterate_gold_answers():
-    results_data_file = 'results_from_models/evaluation_data/llama_8b_evaluation_data_enriched.json'
+    results_data_file = 'results_from_models/evaluation_data/llama_70b_evaluation_data_enriched.json'
     with open(results_data_file, 'r') as json_file:
         results_data = json.load(json_file)
     gold_answers = results_data['expected']
@@ -67,7 +67,7 @@ def iterate_gold_answers():
                 to_write = gold_answer
             else:
                 to_write = "wrong"
-            results_data['predictions'][i] = to_write
+            parsed_answers[i] = to_write
             with open(results_data_file, "w") as json_file:
                 json.dump(results_data, json_file)
         i += 1
