@@ -36,7 +36,6 @@ for arrangements_file in arrangements_files:
                 pass
 
         if prompt_question_type in ["YES_NO_PROMPTS"]:
-            continue
             prompts_sub_types, arrangements_ids, prompts, expected_answers = (
                 ClosedQuestionsPromptGenerator(arrangements_file, prompt_question_type).
                 get_prompts_and_expected_answers())

@@ -27,7 +27,7 @@ def generate_data(k=50, multi=False, disambiguate=False, temporal_reasoning=True
 
 
 if __name__ == '__main__':
-    number_of_scenarios = 1
+    number_of_scenarios = 2
     for multi in [False, True]:
         for temporal_reasoning in [False, True]:
             for disambiguate in [False, True]:

@@ -53,7 +53,7 @@ class Generator:
         possible_conclusions = []
         for a in G.nodes:
             for b in G.nodes:
-                if a != b and not G.has_edge(a, b):
+                if a != b and not G.has_edge(a, b) and not G.has_edge(b, a):
                     possible_conclusions.append([[names[a], names[b]], self.get_relation(G, a, b)])
         if draw_graph:
             self.draw_graph(G, mapping)
