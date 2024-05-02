@@ -15,7 +15,7 @@ def parse_result(raw_result, idx):
     match_answer_square_brackets = re.search(pattern_answer_square_brackets, raw_result)
 
     if raw_result.isdigit():
-        extracted_text = raw_result
+        extracted_text = int(raw_result)
     elif match_answer_square_brackets:
         extracted_text = match_answer_square_brackets.group(1).lower()
     else:
@@ -73,7 +73,12 @@ results_data["show_all_possible"] = question_type_show_all_possible_with_names
 results_data["count_all_possible"] = question_type_count_all_possible_with_names
 raw_results = results_data['model_full_answers']
 parsed_results = [parse_result(res, i) for i, res in enumerate(raw_results)]
-results_data["parsed_results"] = parsed_results
+results_data["predictions"] = parsed_results
+results_data["expected"] = results_data['expected_answer']
+del results_data["expected_answer"]
+results_data["success"] = [y_hat == y for y, y_hat in zip(results_data['expected'], results_data['predictions'])]
+
+
 i=1
 
 with open('results_from_models/evaluation_data/llama_8b_evaluation_data_enriched.json', "w") as json_file:
