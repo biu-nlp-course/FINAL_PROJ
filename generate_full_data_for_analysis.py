@@ -1,29 +1,33 @@
 import json
 
-query_data_files = ["OUTPUTTED_PROMPTS/queries_closed_questiones.json", "OUTPUTTED_PROMPTS/queries_open_questions.json"]
-evaluation_files = ['results_from_models/evaluation_data/closed_evaluation_data.json', 'open_evaluation_data.json']
+evaluation_files = ['results_from_models/evaluation_data/llama_8b_evaluation_data.json']
 
-closed_questions_data_file = query_data_files[0]
+closed_questions_data_file = evaluation_files[0]
 closed_questions_evaluation_file = evaluation_files[0]
-with open(closed_questions_data_file, 'r') as json_file:
-    queries_data = json.load(json_file)
 
 with open(closed_questions_evaluation_file, 'r') as json_file:
     results_data = json.load(json_file)
 
-source_file_names = queries_data['arrangement_file_source']
+source_file_names = results_data['arrangement_file_source']
 with_disambiguating_terms = [('disambiguate' in name) for name in source_file_names]
 single_arrangement_scenario = [('single' in name) for name in source_file_names]
 multi_arrangement_scenario = [('multi' in name) for name in source_file_names]
 temporal_arrangement = [('temporal' in name) for name in source_file_names]
 spatial_arrangement = [('spatial' in name) for name in source_file_names]
 
-setup = results_data['setup']
+setup = results_data['prompt_sub_type']
 question_type_binary_relation = [('binary' in name) for name in setup]
 question_type_candidate = [('candidate' in name) for name in setup]
+question_type_show_all_possible_with_names = [(('all_possible_arrangements_with_the_names_of_the people' in name)
+                                    or ('all_possible_arrangements_with_the_number_of_the_people' in name)
+                                               or ('all_possible_arrangements_with_the_names_of_the_people' in name)) for name in setup]
+question_type_count_all_possible_with_names = [(('num_of_all_possible_arrangements_with_the_number_of_the_people' in name)
+                                    or ('num_of_all_possible_arrangements_with_the_names_of_the_people' in name) or
+                                                ('num_of_all_possible_arrangements_with_the_names_of_the people' in name)) for name in setup]
+
 
 prompt_sub_type = []
-prompts_sub_types_extended = queries_data['prompt_sub_type']
+prompts_sub_types_extended = results_data['prompt_sub_type']
 for subtype in prompts_sub_types_extended:
     if 'text1_text2_neutral' in subtype:
         prompt_sub_type.append("true_false_neutral")
@@ -33,6 +37,11 @@ for subtype in prompts_sub_types_extended:
         prompt_sub_type.append("yes_no_dont_know")
     elif 'text1_text2_unable_to_determine' in subtype:
         prompt_sub_type.append("true_false_unable_to_determine")
+    elif ('all_possible_arrangements_with_the_names_of_the' in subtype) or ('num_of_all_possible_arrangements_with_the_names_of_the_people' == subtype):
+        prompt_sub_type.append("with_the_names_of_the_people")
+    elif ('all_possible_arrangements_with_the_number_of_the_people' == subtype) or (
+            'num_of_all_possible_arrangements_with_the_number_of_the_people' == subtype):
+        prompt_sub_type.append("with_the_number_of_the_people")
     else:
         raise ValueError
 
@@ -44,10 +53,12 @@ results_data["spatial"] = spatial_arrangement
 results_data["binary_relation"] = question_type_binary_relation
 results_data["candidate"] = question_type_candidate
 results_data["prompt_subtype"] = prompt_sub_type
+results_data["show_all_possible"] = question_type_show_all_possible_with_names
+results_data["count_all_possible"] = question_type_count_all_possible_with_names
 
 i=1
 
-with open('results_from_models/evaluation_data/closed_evaluation_data_enriched.json', "w") as json_file:
+with open('results_from_models/evaluation_data/llama_8b_evaluation_data_enriched.json', "w") as json_file:
     json.dump(results_data, json_file)
 
 
