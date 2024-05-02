@@ -69,7 +69,7 @@ if write_queries_to_file:
 
 model_answers = []
 i = 1
-model = "meta-llama/Llama-3-8b-chat-hf"
+model = "meta-llama/Llama-3-70b-chat-hf"
 for prompt, expected_answer, prompt_sub_type in zip(prompts, expected_answers, prompt_sub_type):
     response = client.chat.completions.create(
         model=model,
@@ -84,6 +84,6 @@ for prompt, expected_answer, prompt_sub_type in zip(prompts, expected_answers, p
     }
 
     if write_answers_to_file:
-        file_name = './results_from_models/llama_8b_results_all_questions_no_candidate_2_scenarios.json'
+        file_name = './results_from_models/llama_70b_results_all_questions_no_candidate_2_scenarios.json'
         with open(file_name, 'w') as json_file:
             json.dump(results, json_file)
