@@ -1,7 +1,7 @@
 import json
 import re
 
-evaluation_files = ['results_from_models/evaluation_data/llama_8b_evaluation_data.json']
+evaluation_files = ['results_from_models/evaluation_data/llama_70b_evaluation_data.json']
 
 closed_questions_data_file = evaluation_files[0]
 closed_questions_evaluation_file = evaluation_files[0]
@@ -16,9 +16,19 @@ def parse_result(raw_result, idx):
 
     if raw_result.isdigit():
         extracted_text = int(raw_result)
+    elif raw_result.startswith('Answer:'):
+        extracted_text = raw_result.replace('Answer: ', '').lower()
+        # print(raw_result)
+        # print(extracted_text)
     elif match_answer_square_brackets:
         extracted_text = match_answer_square_brackets.group(1).lower()
+        # print(raw_result)
+        # print(extracted_text)
     else:
+        extracted_text = f'UNPARSABLE,{idx}'
+
+    if not raw_result.isdigit() and len(extracted_text) > 30:
+        print(raw_result)
         extracted_text = f'UNPARSABLE,{idx}'
 
     return extracted_text
@@ -81,7 +91,7 @@ results_data["success"] = [y_hat == y for y, y_hat in zip(results_data['expected
 
 i=1
 
-with open('results_from_models/evaluation_data/llama_8b_evaluation_data_enriched.json', "w") as json_file:
+with open('results_from_models/evaluation_data/llama_70b_evaluation_data_enriched.json', "w") as json_file:
     json.dump(results_data, json_file)
 
 
