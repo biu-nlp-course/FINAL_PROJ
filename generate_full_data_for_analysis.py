@@ -1,4 +1,5 @@
 import json
+import re
 
 evaluation_files = ['results_from_models/evaluation_data/llama_8b_evaluation_data.json']
 
@@ -7,6 +8,21 @@ closed_questions_evaluation_file = evaluation_files[0]
 
 with open(closed_questions_evaluation_file, 'r') as json_file:
     results_data = json.load(json_file)
+
+
+def parse_result(raw_result, idx):
+    pattern_answer_square_brackets = r"^\[Answer: (.+?)\]"
+    match_answer_square_brackets = re.search(pattern_answer_square_brackets, raw_result)
+
+    if raw_result.isdigit():
+        extracted_text = int(raw_result)
+    elif match_answer_square_brackets:
+        extracted_text = match_answer_square_brackets.group(1).lower()
+    else:
+        extracted_text = f'UNPARSABLE,{idx}'
+
+    return extracted_text
+
 
 source_file_names = results_data['arrangement_file_source']
 with_disambiguating_terms = [('disambiguate' in name) for name in source_file_names]
@@ -55,6 +71,13 @@ results_data["candidate"] = question_type_candidate
 results_data["prompt_subtype"] = prompt_sub_type
 results_data["show_all_possible"] = question_type_show_all_possible_with_names
 results_data["count_all_possible"] = question_type_count_all_possible_with_names
+raw_results = results_data['model_full_answers']
+parsed_results = [parse_result(res, i) for i, res in enumerate(raw_results)]
+results_data["predictions"] = parsed_results
+results_data["expected"] = results_data['expected_answer']
+del results_data["expected_answer"]
+results_data["success"] = [y_hat == y for y, y_hat in zip(results_data['expected'], results_data['predictions'])]
+
 
 i=1
 
