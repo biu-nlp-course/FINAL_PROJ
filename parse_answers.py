@@ -48,23 +48,29 @@ def parse_answers_if_possible():
 
 
 def iterate_gold_answers():
-    queries_data_file = 'OUTPUTTED_PROMPTS/queries_open_questions.json'
-    with open(queries_data_file, 'r') as json_file:
-        queries_data = json.load(json_file)
-    gold_answers = queries_data['expected_answer']
-    results_data_file = 'results_from_models/gemma_7b_results_open_questions.json'
+    results_data_file = 'results_from_models/evaluation_data/llama_8b_evaluation_data_enriched.json'
     with open(results_data_file, 'r') as json_file:
         results_data = json.load(json_file)
-    parsed_answers = results_data['parsed_answers']
+    gold_answers = results_data['expected']
+    parsed_answers = results_data['predictions']
     full_answers = results_data['model_full_answers']
+    i = 0
     for gold_answer, parsed_result, full_answer in zip(gold_answers, parsed_answers, full_answers):
-        if "UNPARSEBLE" in parsed_result:
+        if "UNPARSABLE" in str(parsed_result):
             print("****************************")
             print(parsed_result)
             print(f"gold:{gold_answer}")
             print("received \n")
             print(full_answer)
-            i = 1
+            success = False #break point here
+            if (success):
+                to_write = gold_answer
+            else:
+                to_write = "wrong"
+            results_data['predictions'][i] = to_write
+            with open(results_data_file, "w") as json_file:
+                json.dump(results_data, json_file)
+        i += 1
 
 
 iterate_gold_answers()
